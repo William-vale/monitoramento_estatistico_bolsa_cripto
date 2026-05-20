@@ -12,3 +12,10 @@ Por ultimo crie uma função test dentro do orquestrador que vai servir para tes
 
 Apenas construa isso primeiro, vamos fazer bem devagar esse projeto para que possamos no final ter exito.  -->
 
+
+<!-- Adicionar no git as modificações
+    git status
+    git add .
+    git commit -m "..."
+    git push -u origin main
+ -->
