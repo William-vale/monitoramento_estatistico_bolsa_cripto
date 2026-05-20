@@ -1,0 +1,1 @@
+# monitoramento_estatistico_bolsa_cripto
