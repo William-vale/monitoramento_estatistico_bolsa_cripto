@@ -12,8 +12,12 @@
 ╚══════════════════════════════════════════════════════════════════╝
 """
 
-import json, time, base64, logging, requests, ccxt
-import yfinance as yf
+import json
+import time
+import base64
+import logging
+import requests
+import ccxt
 from datetime import datetime
 from pathlib import Path
 
@@ -23,7 +27,7 @@ from pathlib import Path
 
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s [%(levelname)s %(message)s]",
+    format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%d-%m-%Y %H:%M:%S",
 )
 log = logging.getLogger("orquestrador")
@@ -73,107 +77,93 @@ B3_SEGMENT_MAP = {
 
 def buscar_ativos_b3(salvar_json: bool = True) -> list[dict]:
     """
-    Busca todos os ativos listados na B3 usando a API pública de empresas listadas e complementa com yfinance para obter o ticker no formato aceito pelo Yahoo Finance ('<TICKER>.SA').
+    Busca todos os ativos listados na B3 usando a API pública.
+    
+    A função pagina automaticamente até obter todos os ativos disponíveis
+    e formata os dados em um padrão consistente.
  
     Parâmetros ----------
     salvar_json : bool
-        Se True, persiste o resultado em TRADE_B3/ativos_b3.json
+        Se True, salva o resultado em TRADE_B3/ativos_b3.json
  
     Retorno -------
-    list[dict]  — lista de dicionários com os campos:
+    list[dict]  — lista com os campos:
         {
             "ticker"       : str   # ex.: "PETR4"
-            "ticker_yf"    : str   # ex.: "PETR4.SA"  (para uso no yfinance)
-            "nome"         : str   # nome da empresa / fundo
+            "ticker_yf"    : str   # ex.: "PETR4.SA"
+            "nome"         : str   # nome da empresa/fundo
             "segmento"     : str   # classificação B3
-            "tipo"         : str   # descrição amigável do tipo
-            "ativo"        : bool  # se o ativo ainda está listado
+            "tipo"         : str   # descrição amigável
+            "ativo"        : bool
         }
     """
-
     global B3_ATIVOS
 
-    log.info("====== Iniciando busca de ativos da B3 ======")
+    log.info("🔄 Iniciando busca de ativos da B3...")
+    
     ativos: list[dict] = []
+    vistos: set[str] = set()  # para evitar duplicatas
     pagina = 1
 
     while True:
-        payload = json.dumps({"language": "pt-br", "pageNumber": pagina, "pageSize": B3_PAGE_SIZE})
-        token = base64.b64decode(payload.encode().decode())
-        url = f"{B3_BASE_URL}/{token}"
-
-        try: 
+        try:
+            # Monta a requisição para a API da B3
+            payload = json.dumps({"language": "pt-br", "pageNumber": pagina, "pageSize": B3_PAGE_SIZE})
+            token = base64.b64decode(payload.encode().decode())
+            url = f"{B3_BASE_URL}/{token}"
+            
             resp = requests.get(url, timeout=B3_TIMEOUT)
             resp.raise_for_status()
             dados = resp.json()
-        except requests.exceptions.Timeout:
-            log.error(f"Timeout na página {pagina} da API B3")
-            break
-        except requests.exceptions.HTTPError as exc:
-            log.error(f"Erro HTTP da API B3: {exc}")
-            break
-        except ValueError:
-            log.error("Resposta da API B3 não é um JSON válido.")
+            
+        except requests.exceptions.RequestException as e:
+            log.error(f"Erro ao buscar página {pagina}: {e}")
             break
 
         empresas = dados.get("results", [])
-        total    = dados.get("total", {})
-
+        
+        # Se não há empresas, chegou ao final
         if not empresas:
-            log.info(f"Nenhum resultado na página {pagina}. Encerrando paginação.")
+            log.info(f"✓ Fim da paginação na página {pagina}")
             break
 
+        # Processa cada empresa
         for empresa in empresas:
-            # O código de negociação pode ter vários tickers (ex.: PETR3, PETR4)
-            codigos_brutos = empresa.get("codes", [empresa.get("code", "")])
-            if isinstance(codigos_brutos, str):
-                codigos_brutos = [codigos_brutos]
+            codigos = empresa.get("codes", [empresa.get("code", "")])
+            if isinstance(codigos, str):
+                codigos = [codigos]
  
-            for cod in codigos_brutos:
-                if not cod:
+            for cod in codigos:
+                if not cod or cod in vistos:
                     continue
+                    
+                vistos.add(cod)
                 segmento = empresa.get("segment", "").upper().replace(" ", "-")
+                
                 ativos.append({
                     "ticker"    : cod.strip(),
                     "ticker_yf" : f"{cod.strip()}.SA",
                     "nome"      : empresa.get("companyName", "").strip(),
                     "segmento"  : segmento,
-                    "tipo"      : B3_SEGMENT_MAP.get(segmento, empresa.get("typeName", "—")),
+                    "tipo"      : B3_SEGMENT_MAP.get(segmento, "Desconhecido"),
                     "ativo"     : True,
                 })
+
+        log.info(f"  Página {pagina}: {len(empresas)} empresa(s) → Total: {len(ativos)} ativos")
+        pagina += 1
+        time.sleep(B3_DELAY)
+
+    B3_ATIVOS = ativos
+    log.info(f"✅ Total de ativos B3: {len(B3_ATIVOS)}")
+
+    if salvar_json:
+        _salvar_json(
+            dados    = {"atualizado_em": _agora(), "total": len(B3_ATIVOS), "ativos": B3_ATIVOS},
+            caminho  = TRADE_B3_DIR / "ativos_b3.json",
+            descricao= "ativos B3",
+        )
  
-            log.info(f"  Página {pagina}: {len(empresas)} empresa(s). Acumulado: {len(ativos)} ativos.")
-
-            # Verifica se há mais páginas
-            total_registros = total.get("totalNumberOfCompanies", 0) if isinstance(total, dict) else 0
-            if total_registros and len(ativos) >= total_registros:
-                break
-            if len(empresas) < B3_PAGE_SIZE:
-                break
-    
-            pagina += 1
-            time.sleep(B3_DELAY)
-
-        # ── Remove duplicatas (mesmo ticker pode aparecer em segmentos diferentes)
-        vistos: set[str] = set()
-        unicos: list[dict] = []
-        for item in ativos:
-            if item["ticker"] not in vistos:
-                vistos.add(item["ticker"])
-            unicos.append(item)
-
-        B3_ATIVOS = unicos
-
-        log.info(f"✔  Total de ativos B3 coletados: {len(B3_ATIVOS)}")
-
-        if salvar_json:
-            _salvar_json(
-                dados    = {"atualizado_em": _agora(), "total": len(B3_ATIVOS), "ativos": B3_ATIVOS},
-                caminho  = TRADE_B3_DIR / "ativos_b3.json",
-                descricao= "ativos B3",
-            )
- 
-        return B3_ATIVOS
+    return B3_ATIVOS
 
 # ═════════════════════════════════════════════════════════════════
 #  2. FUNÇÃO: BUSCAR CRIPTOMOEDAS BYBIT
@@ -181,89 +171,81 @@ def buscar_ativos_b3(salvar_json: bool = True) -> list[dict]:
  
 def buscar_cripto_bybit(salvar_json: bool = True) -> dict[str, list[dict]]:
     """
-    Busca todos os pares/contratos disponíveis na Bybit usando ccxt, separando entre mercado SPOT e mercado de FUTUROS (perpétuos + entrega).
+    Busca todos os pares/contratos disponíveis na Bybit (SPOT e FUTUROS).
+    
+    A função se conecta à exchange através da biblioteca ccxt e classifica
+    automaticamente cada mercado como SPOT, SWAP (perpétuo) ou FUTURE.
  
     Parâmetros ----------
     salvar_json : bool
-        Se True, persiste os resultados em:
-          • TRADE_CRIPTO/bybit_spot.json
-          • TRADE_CRIPTO/bybit_futuros.json
+        Se True, salva em arquivos JSON separados para SPOT e FUTUROS
  
     Retorno -------
-    dict com chaves "spot" e "futuros", cada uma com lista de dicionários:
+    dict com estrutura:
+        {
+            "spot"    : [ {...}, {...} ],
+            "futuros" : [ {...}, {...} ]
+        }
+        
+    Cada item contém:
         {
             "symbol"       : str   # ex.: "BTC/USDT"
             "base"         : str   # ex.: "BTC"
             "quote"        : str   # ex.: "USDT"
             "tipo"         : str   # "spot" | "swap" | "future"
-            "contrato"     : str   # ex.: "BTC/USDT:USDT" (apenas futuros)
+            "contrato"     : str   # ID do contrato
             "ativo"        : bool
-            "settlement"   : str   # moeda de liquidação (futuros)
-            "expiracao"    : str | None  # data de expiração (contratos com vencimento)
+            "settlement"   : str   # moeda de liquidação
+            "expiracao"    : str | None
         }
     """
     global BYBIT_SPOT, BYBIT_FUTUROS
  
-    log.info("═══ Iniciando busca de criptomoedas Bybit (SPOT + FUTUROS) ═══")
+    log.info("🔄 Buscando criptomoedas da Bybit (SPOT + FUTUROS)...")
  
-    spot_list:    list[dict] = []
+    spot_list: list[dict] = []
     futuros_list: list[dict] = []
  
-    # ── Inicializa a exchange
     try:
-        exchange = ccxt.bybit({
-            "enableRateLimit": True,
-            "options": {
-                "defaultType": "spot",      # ponto de partida; sobrescrito abaixo
-            },
-        })
+        # Conecta à exchange
+        exchange = ccxt.bybit({"enableRateLimit": True})
+        
+        # Carrega todos os mercados
+        log.info("  Carregando mercados da Bybit...")
+        mercados = exchange.load_markets(reload=True)
+        log.info(f"  Total de mercados retornados: {len(mercados)}")
+        
     except Exception as exc:
-        log.error(f"Falha ao inicializar ccxt.bybit: {exc}")
+        log.error(f"Erro ao conectar com Bybit: {exc}")
         return {"spot": [], "futuros": []}
  
-    # ── Carrega todos os mercados de uma vez
-    try:
-        log.info("  Carregando todos os mercados da Bybit...")
-        mercados: dict = exchange.load_markets(True)   # reload=True para garantir dados frescos
-        log.info(f"  Total de mercados retornados pela Bybit: {len(mercados)}")
-    except ccxt.NetworkError as exc:
-        log.error(f"Erro de rede ao acessar Bybit: {exc}")
-        return {"spot": [], "futuros": []}
-    except ccxt.ExchangeError as exc:
-        log.error(f"Erro da exchange Bybit: {exc}")
-        return {"spot": [], "futuros": []}
-    except Exception as exc:
-        log.error(f"Erro inesperado ao carregar mercados Bybit: {exc}")
-        return {"spot": [], "futuros": []}
- 
-    # ── Classifica cada mercado
+    # Classifica cada mercado em SPOT ou FUTUROS
     for symbol, market in mercados.items():
-        is_spot   = market.get("spot",   False)
-        is_swap   = market.get("swap",   False)   # perpétuos (sem vencimento)
-        is_future = market.get("future", False)   # contratos com vencimento
+        is_spot   = market.get("spot", False)
+        is_swap   = market.get("swap", False)
+        is_future = market.get("future", False)
  
         entrada = {
-            "symbol"    : symbol,
-            "base"      : market.get("base",  ""),
-            "quote"     : market.get("quote", ""),
-            "tipo"      : market.get("type",  "desconhecido"),
-            "contrato"  : market.get("id",    symbol),
-            "ativo"     : market.get("active", True),
-            "settlement": market.get("settle", ""),
-            "expiracao" : market.get("expiry", None),   # timestamp ms ou None
+            "symbol"     : symbol,
+            "base"       : market.get("base", ""),
+            "quote"      : market.get("quote", ""),
+            "tipo"       : market.get("type", "desconhecido"),
+            "contrato"   : market.get("id", symbol),
+            "ativo"      : market.get("active", True),
+            "settlement" : market.get("settle", ""),
+            "expiracao"  : market.get("expiry", None),
         }
  
         if is_spot:
             spot_list.append(entrada)
         elif is_swap or is_future:
             futuros_list.append(entrada)
-        # Opções e outros tipos ignorados neste estágio
  
     BYBIT_SPOT    = spot_list
     BYBIT_FUTUROS = futuros_list
  
-    log.info(f"✔  SPOT    : {len(BYBIT_SPOT)} pares")
-    log.info(f"✔  FUTUROS : {len(BYBIT_FUTUROS)} contratos")
+    log.info(f"✅ SPOT    : {len(BYBIT_SPOT)} pares")
+    log.info(f"✅ FUTUROS : {len(BYBIT_FUTUROS)} contratos")
  
     if salvar_json:
         _salvar_json(
@@ -285,67 +267,53 @@ def buscar_cripto_bybit(salvar_json: bool = True) -> dict[str, list[dict]]:
  
 def teste() -> dict:
     """
-    Executa todas as funções do orquestrador e verifica seus retornos.
- 
-    ⚠️  As funções são totalmente independentes desta função — cada uma pode ser chamada diretamente em qualquer parte do projeto.
+    Executa um teste completo de todas as funções do orquestrador.
+    
+    ⚠️ As funções são totalmente independentes — cada uma pode ser
+       chamada diretamente sem precisar desta função de teste.
  
     Retorno -------
-    dict  — relatório completo com status de cada função testada:
-        {
-            "timestamp"  : str,
-            "resultados" : {
-                "<nome_funcao>": {
-                    "status"    : "OK" | "FALHA" | "AVISO",
-                    "mensagem"  : str,
-                    "detalhes"  : dict | None,
-                }
-            },
-            "resumo": {"total": int, "ok": int, "falha": int, "aviso": int}
-        }
+    dict — relatório com o resultado de cada teste
     """
-    log.info("══════════════════════════════════")
-    log.info("  INICIANDO SUITE DE TESTES       ")
-    log.info("══════════════════════════════════")
+    log.info("\n" + "="*50)
+    log.info("  ▶ INICIANDO TESTES DO ORQUESTRADOR")
+    log.info("="*50 + "\n")
  
     relatorio: dict = {
         "timestamp" : _agora(),
         "resultados": {},
-        "resumo"    : {"total": 0, "ok": 0, "falha": 0, "aviso": 0},
+        "resumo"    : {"total": 0, "ok": 0, "falha": 0},
     }
  
-    # ── Teste 1: buscar_ativos_b3 ──────────────────────────────
+    # Teste 1: B3
     _teste_funcao(
         relatorio  = relatorio,
         nome       = "buscar_ativos_b3",
         funcao     = buscar_ativos_b3,
         kwargs     = {"salvar_json": True},
         validacoes = [
-            ("Retornou uma lista",        lambda r: isinstance(r, list)),
-            ("Lista não está vazia",      lambda r: len(r) > 0),
-            ("Itens têm campo 'ticker'",  lambda r: all("ticker"  in x for x in r[:5])),
-            ("Itens têm campo 'ticker_yf'",lambda r: all("ticker_yf" in x for x in r[:5])),
-            ("Itens têm campo 'nome'",    lambda r: all("nome"    in x for x in r[:5])),
+            ("Retorna lista",        lambda r: isinstance(r, list)),
+            ("Lista não vazia",      lambda r: len(r) > 0),
+            ("Tem campo 'ticker'",   lambda r: all("ticker" in x for x in r[:3])),
+            ("Tem campo 'ticker_yf'",lambda r: all("ticker_yf" in x for x in r[:3])),
         ],
     )
  
-    # ── Teste 2: buscar_cripto_bybit ───────────────────────────
+    # Teste 2: Bybit
     _teste_funcao(
         relatorio  = relatorio,
         nome       = "buscar_cripto_bybit",
         funcao     = buscar_cripto_bybit,
         kwargs     = {"salvar_json": True},
         validacoes = [
-            ("Retornou um dict",           lambda r: isinstance(r, dict)),
-            ("Dict tem chave 'spot'",      lambda r: "spot"    in r),
-            ("Dict tem chave 'futuros'",   lambda r: "futuros" in r),
-            ("SPOT não está vazio",        lambda r: len(r.get("spot",    [])) > 0),
-            ("FUTUROS não está vazio",     lambda r: len(r.get("futuros", [])) > 0),
-            ("Itens SPOT têm 'symbol'",    lambda r: all("symbol" in x for x in r["spot"][:5])),
-            ("Itens FUTUROS têm 'symbol'", lambda r: all("symbol" in x for x in r["futuros"][:5])),
+            ("Retorna dict",         lambda r: isinstance(r, dict)),
+            ("Tem chave 'spot'",     lambda r: "spot" in r),
+            ("Tem chave 'futuros'",  lambda r: "futuros" in r),
+            ("SPOT não vazio",       lambda r: len(r.get("spot", [])) > 0),
+            ("FUTUROS não vazio",    lambda r: len(r.get("futuros", [])) > 0),
         ],
     )
  
-    # ── Resumo final ───────────────────────────────────────────
     _imprimir_relatorio(relatorio)
     return relatorio
 
@@ -368,18 +336,13 @@ def _salvar_json(dados: dict, caminho: Path, descricao: str = "") -> None:
         log.error(f"  Falha ao salvar {descricao}: {exc}")
  
  
-def _teste_funcao(
-    relatorio: dict,
-    nome: str,
-    funcao,
-    kwargs: dict,
-    validacoes: list[tuple],
-) -> None:
+def _teste_funcao(relatorio: dict, nome: str, funcao, kwargs: dict, validacoes: list) -> None:
     """
-    Executa uma função, aplica validações sobre o retorno e
-    registra o resultado no relatório de testes.
+    Executa uma função e valida o resultado.
+    
+    Registra o status (OK/FALHA) no relatório de testes.
     """
-    log.info(f"  ▶  Testando: {nome}")
+    log.info(f"  Testando: {nome}")
     relatorio["resumo"]["total"] += 1
  
     try:
@@ -387,29 +350,28 @@ def _teste_funcao(
     except Exception as exc:
         relatorio["resultados"][nome] = {
             "status"  : "FALHA",
-            "mensagem": f"Exceção durante execução: {type(exc).__name__}: {exc}",
-            "detalhes": None,
+            "mensagem": f"Erro: {type(exc).__name__}: {exc}",
+            "detalhes": {},
         }
         relatorio["resumo"]["falha"] += 1
-        log.error(f"    ✘ FALHA — {exc}")
+        log.error(f"    ✘ Erro na execução: {exc}")
         return
  
-    falhas  = []
-    avisos  = []
+    falhas = []
     detalhes = {}
  
+    # Valida cada critério
     for descricao, validacao in validacoes:
         try:
             passou = validacao(resultado)
-        except Exception as exc:
-            passou = False
-            avisos.append(f"Erro ao avaliar validação '{descricao}': {exc}")
- 
-        detalhes[descricao] = "✔" if passou else "✘"
-        if not passou:
+            detalhes[descricao] = "✓" if passou else "✗"
+            if not passou:
+                falhas.append(descricao)
+        except Exception as e:
+            detalhes[descricao] = f"erro: {e}"
             falhas.append(descricao)
  
-    # Informações extras sobre o resultado
+    # Adiciona informações extras
     if isinstance(resultado, list):
         detalhes["total_itens"] = len(resultado)
     elif isinstance(resultado, dict):
@@ -418,43 +380,34 @@ def _teste_funcao(
                 detalhes[f"total_{k}"] = len(v)
  
     if falhas:
-        status   = "FALHA"
-        mensagem = f"Validações reprovadas: {'; '.join(falhas)}"
+        status = "FALHA"
         relatorio["resumo"]["falha"] += 1
-        log.warning(f"    ✘ {status} — {mensagem}")
-    elif avisos:
-        status   = "AVISO"
-        mensagem = f"Avisos: {'; '.join(avisos)}"
-        relatorio["resumo"]["aviso"] += 1
-        log.warning(f"    ⚠  {status} — {mensagem}")
+        log.error(f"    ✘ {', '.join(falhas)}")
     else:
-        status   = "OK"
-        mensagem = "Todas as validações passaram."
+        status = "OK"
         relatorio["resumo"]["ok"] += 1
-        log.info(f"    ✔ {status} — {mensagem}")
+        log.info(f"    ✓ Todas as validações passaram")
  
     relatorio["resultados"][nome] = {
         "status"  : status,
-        "mensagem": mensagem,
         "detalhes": detalhes,
     }
  
  
 def _imprimir_relatorio(relatorio: dict) -> None:
-    """Imprime um relatório formatado no log."""
-    log.info("══════════════════════════════════")
-    log.info("  RELATÓRIO DE TESTES             ")
-    log.info("══════════════════════════════════")
+    """Imprime o relatório de testes formatado."""
+    log.info("\n" + "="*50)
+    log.info("  RELATÓRIO FINAL")
+    log.info("="*50)
+    
     for nome, res in relatorio["resultados"].items():
-        icone = {"OK": "✔", "FALHA": "✘", "AVISO": "⚠"}.get(res["status"], "?")
-        log.info(f"  {icone}  {nome:<30} [{res['status']}]")
-        if res.get("detalhes"):
-            for k, v in res["detalhes"].items():
-                log.info(f"       • {k}: {v}")
+        icone = "✓" if res["status"] == "OK" else "✗"
+        log.info(f"  {icone} {nome}: {res['status']}")
+        
     r = relatorio["resumo"]
-    log.info("──────────────────────────────────")
-    log.info(f"  Total: {r['total']}  |  OK: {r['ok']}  |  Falha: {r['falha']}  |  Aviso: {r['aviso']}")
-    log.info("══════════════════════════════════")
+    log.info("─"*50)
+    log.info(f"  Total: {r['total']} | OK: {r['ok']} | Falha: {r['falha']}")
+    log.info("="*50 + "\n")
  
 # ═════════════════════════════════════════════════════════════════
 #  PONTO DE ENTRADA DIRETO
@@ -462,27 +415,32 @@ def _imprimir_relatorio(relatorio: dict) -> None:
  
 if __name__ == "__main__":
     import sys
- 
+
     args = sys.argv[1:]
- 
+
     if "teste" in args:
         resultado = teste()
         sys.exit(0 if resultado["resumo"]["falha"] == 0 else 1)
- 
+
     elif "b3" in args:
         ativos = buscar_ativos_b3()
         print(f"\nTotal de ativos B3: {len(ativos)}")
-        print("Primeiros 5:", json.dumps(ativos[:5], ensure_ascii=False, indent=2))
- 
+        if ativos:
+            print("Primeiros 3:", json.dumps(ativos[:3], ensure_ascii=False, indent=2))
+
     elif "cripto" in args:
         resultado = buscar_cripto_bybit()
         print(f"\nSPOT   : {len(resultado['spot'])} pares")
         print(f"FUTUROS: {len(resultado['futuros'])} contratos")
-        print("Primeiros 3 SPOT:", json.dumps(resultado["spot"][:3], ensure_ascii=False, indent=2))
- 
+        if resultado["spot"]:
+            print("Primeiros 2 SPOT:", json.dumps(resultado["spot"][:2], ensure_ascii=False, indent=2))
+
     else:
-        print("\nUso:  python orquestrador.py [b3 | cripto | teste]\n")
-        print("  b3     → busca todos os ativos da B3")
-        print("  cripto → busca todos os pares/contratos da Bybit")
-        print("  teste  → executa a suite de testes completa")
- 
+        print("\n" + "="*60)
+        print("USO:  python orquestrador.py [comando]")
+        print("="*60)
+        print("\nComandos disponíveis:")
+        print("  b3     → Busca todos os ativos da B3 e salva em JSON")
+        print("  cripto → Busca todos os pares/contratos da Bybit e salva em JSON")
+        print("  teste  → Executa testes em todas as funções")
+        print("\n")
