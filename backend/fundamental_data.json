@@ -1,0 +1,20 @@
+{
+  "PETR4.SA": {
+    "EPS": "8.347058",
+    "Market cap": "613085621299",
+    "P/E": "5.328796827640738",
+    "Name": "Petroleo Brasileiro SA Pfd",
+    "52WeekLow": "28.86",
+    "52WeekHigh": "50.69",
+    "_source": "brapi"
+  },
+  "VALE3.SA": {
+    "EPS": "3.6552416",
+    "Market cap": "344478770659",
+    "P/E": "22.810244022947487",
+    "Name": "Vale S.A.",
+    "52WeekLow": "49.72",
+    "52WeekHigh": "91.62",
+    "_source": "brapi"
+  }
+}
