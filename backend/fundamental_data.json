@@ -1,20 +1,61 @@
 {
-  "PETR4.SA": {
-    "EPS": "8.347058",
-    "Market cap": "613085621299",
-    "P/E": "5.328796827640738",
-    "Name": "Petroleo Brasileiro SA Pfd",
-    "52WeekLow": "28.86",
-    "52WeekHigh": "50.69",
-    "_source": "brapi"
+  "symbols": {
+    "PETR4.SA": {
+      "DY": "5.74%",
+      "P/L": "5.33",
+      "Market cap": "612.69B",
+      "EPS": "R$8.35",
+      "Margem Líquida": "22.37%",
+      "P/VPA": "1.2843342",
+      "ROE": "0.24202907",
+      "Liquidez Corrente": "0.74290836",
+      "Dívida Líquida / EBITDA": "2.725944630203912",
+      "Beta": "0.40786532",
+      "metrics": {
+        "DY": 5.74,
+        "P/L": 5.33,
+        "P/VPA": 1.2843342,
+        "ROE": 24.202907,
+        "Margem Líquida": 22.37,
+        "Dívida Líquida / EBITDA": 2.725944630203912,
+        "Liquidez Corrente": 0.74290836
+      },
+      "passes_filters": false,
+      "filter_reasons": [
+        "DY=5.74 < 6.0",
+        "Dívida Líquida / EBITDA=2.725944630203912 > 2.5",
+        "Liquidez Corrente=0.74290836 < 1.0"
+      ]
+    },
+    "VALE3.SA": {
+      "DY": "8.54%",
+      "P/L": "22.73",
+      "Market cap": "368.89B",
+      "EPS": "R$3.66",
+      "Margem Líquida": "24.26%",
+      "P/VPA": "1.8829298",
+      "ROE": "0.07062757",
+      "Liquidez Corrente": "1.2398882",
+      "Dívida Líquida / EBITDA": "3.25272928950902",
+      "Beta": "0.7014133",
+      "metrics": {
+        "DY": 8.54,
+        "P/L": 22.73,
+        "P/VPA": 1.8829298,
+        "ROE": 7.062757,
+        "Margem Líquida": 24.26,
+        "Dívida Líquida / EBITDA": 3.25272928950902,
+        "Liquidez Corrente": 1.2398882
+      },
+      "passes_filters": false,
+      "filter_reasons": [
+        "P/L=22.73 > 15.0",
+        "P/VPA=1.8829298 > 1.5",
+        "ROE=7.062757 < 15.0",
+        "Dívida Líquida / EBITDA=3.25272928950902 > 2.5"
+      ]
+    }
   },
-  "VALE3.SA": {
-    "EPS": "3.6552416",
-    "Market cap": "344478770659",
-    "P/E": "22.810244022947487",
-    "Name": "Vale S.A.",
-    "52WeekLow": "49.72",
-    "52WeekHigh": "91.62",
-    "_source": "brapi"
-  }
+  "filtered_symbols": [],
+  "filtered_data": []
 }

@@ -111,151 +111,174 @@ def fetch_trade_data_brapi(symbols: List[str]) -> Dict[str, Any]:
 	return results
 
 
-# -------------------- Passo 4: Buscar dados fundamentalistas via dadosdemercado --------------------
+# -------------------- Passo 4: Buscar dados fundamentalistas via Google Finance --------------------
 def fetch_fundamental_dados(symbols: List[str]) -> Dict[str, Any]:
 	"""
-	Passo 4 (atualizado): busca dados fundamentalistas usando Google Finance.
+	Passo 4 (atualizado): busca dados fundamentalistas usando o Google Finance.
 
 	- Para cada `symbol` constrói a URL do Google Finance e faz um GET.
-	- Tenta extrair valores comuns (Market cap, P/E, P/B, Dividend yield, Beta, EPS).
-	- Retorna um mapeamento symbol -> dicionário de campos encontrados.
-
-	Observação: o Google Finance não oferece uma API pública estável; esta
-	função realiza scraping leve e *best-effort* do HTML/JS da página. Os
-	valores extraídos são trechos textuais próximos aos rótulos encontrados.
+	- Tenta extrair os indicadores solicitados diretamente do HTML do Google Finance.
+	- Usa `brapi.dev` como fallback para completar campos numéricos que não são
+	  expostos diretamente pelo scraping.
+	- Aplica os filtros solicitados e ordena os resultados por P/L ascendente.
 	"""
 	results: Dict[str, Any] = {}
 
 	headers = {"User-Agent": "Mozilla/5.0", "Accept": "text/html"}
 
-	# Rótulos que tentamos capturar — organizar em ordem de importância
-	labels = [
-		"Market cap",
-		"P/E",
-		"P/E ratio",
-		"Price/Book",
-		"P/B",
-		"Dividend yield",
-		"Dividend yield %",
-		"Beta",
-		"EPS (TTM)",
-		"EPS",
-	]
+	def _parse_float(value: Any, field_name: Optional[str] = None) -> Optional[float]:
+		if value is None:
+			return None
+		if isinstance(value, (int, float)):
+			float_value = float(value)
+			if field_name in ("ROE", "Margem Líquida", "DY") and float_value <= 1:
+				return float_value * 100
+			return float_value
+		text = str(value).strip()
+		if not text:
+			return None
+		percent = text.endswith("%")
+		if percent:
+			text = text[:-1].strip()
+		text = text.replace(',', '.').replace('−', '-').replace('–', '-')
+		m = re.search(r'([-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)', text)
+		if not m:
+			return None
+		float_value = float(m.group(1))
+		if percent:
+			return float_value
+		if field_name in ("ROE", "Margem Líquida", "DY") and float_value <= 1:
+			return float_value * 100
+		return float_value
+
+	def _parse_google_finance(text: str) -> Dict[str, str]:
+		found: Dict[str, str] = {}
+		label_map = {
+			"Dividend": "DY",
+			"P/E ratio": "P/L",
+			"Mkt. cap": "Market cap",
+			"EPS": "EPS",
+			"Beta": "Beta",
+		}
+		for label, target in label_map.items():
+			pattern = rf'<div class="KxsRFb">\s*<div class="SwQK7">{re.escape(label)}</div>\s*<div class="dO6ijd">([^<]+)</div>'
+			m = re.search(pattern, text, re.I)
+			if m:
+				found[target] = m.group(1).strip()
+
+		m = re.search(r'<div class="sp5q4e">Net profit margin</div>.*?<div class="CNzF7d">([^<]+)</div>', text, re.S | re.I)
+		if m:
+			found["Margem Líquida"] = m.group(1).strip()
+
+		return found
+
+	def _apply_filters(found: Dict[str, Any]) -> Dict[str, Any]:
+		metrics = {
+			"DY": _parse_float(found.get("DY"), "DY"),
+			"P/L": _parse_float(found.get("P/L"), "P/L"),
+			"P/VPA": _parse_float(found.get("P/VPA"), "P/VPA"),
+			"ROE": _parse_float(found.get("ROE"), "ROE"),
+			"Margem Líquida": _parse_float(found.get("Margem Líquida"), "Margem Líquida"),
+			"Dívida Líquida / EBITDA": _parse_float(found.get("Dívida Líquida / EBITDA"), "Dívida Líquida / EBITDA"),
+			"Liquidez Corrente": _parse_float(found.get("Liquidez Corrente"), "Liquidez Corrente"),
+		}
+
+		passes = True
+		reasons: List[str] = []
+		filters = [
+			("DY", 6.0, 30.0, False),
+			("P/L", 1.0, 15.0, False),
+			("P/VPA", 0.5, 1.5, False),
+			("ROE", 15.0, None, False),
+			("Margem Líquida", 10.0, None, True),
+			("Dívida Líquida / EBITDA", 0.5, 2.5, False),
+			("Liquidez Corrente", 1.0, 2.0, False),
+		]
+		for key, minimum, maximum, strict in filters:
+			value = metrics.get(key)
+			if value is None:
+				passes = False
+				reasons.append(f"{key} ausente")
+				continue
+			if minimum is not None:
+				if strict:
+					if value <= minimum:
+						passes = False
+						reasons.append(f"{key}={value} <= {minimum}")
+				else:
+					if value < minimum:
+						passes = False
+						reasons.append(f"{key}={value} < {minimum}")
+			if maximum is not None and value > maximum:
+				passes = False
+				reasons.append(f"{key}={value} > {maximum}")
+		return {"metrics": metrics, "passes_filters": passes, "filter_reasons": reasons}
 
 	for symbol in symbols:
 		clean = symbol.split(".")[0]
-		# Presume B3 quando símbolo termina em .SA, senão usa BMFBOVESPA por padrão
 		exchange = "BMFBOVESPA"
-		if symbol.upper().endswith(".SA"):
-			exchange = "BMFBOVESPA"
-
-		url = f"https://www.google.com/finance/quote/{clean}:{exchange}"
+		url = f"https://finance.google.com/finance?q={clean}:{exchange}"
+		found: Dict[str, Any] = {}
 		try:
 			resp = HTTP_SESSION.get(url, headers=headers, timeout=15)
 			resp.raise_for_status()
 			text = resp.text
-
-			found: Dict[str, str] = {}
-			# 1) Procura por padrões diretos no HTML comum gerado
-			for label in labels:
-				# tenta padrões com blocos div/span (observação: estrutura pode variar)
-				m = re.search(rf'{re.escape(label)}\s*</[^>]+>\s*<[^>]+>\s*([^<\n]+)', text, re.I)
-				if not m:
-					m = re.search(rf'{re.escape(label)}\s*[:\-–]?\s*([^<\n]{{1,80}})', text, re.I)
+			found.update(_parse_google_finance(text))
+			if "P/L" not in found:
+				m = re.search(r'<div class="SwQK7">P/E ratio</div>\s*<div class="dO6ijd">([^<]+)</div>', text, re.I)
 				if m:
-					val = m.group(1).strip()
-					found[label] = val
+					found["P/L"] = m.group(1).strip()
+			m_roe = re.search(r'ROE\s*[:\-–]?\s*([0-9]+\.?[0-9]*%?)', text, re.I)
+			if m_roe and "ROE" not in found:
+				found["ROE"] = m_roe.group(1).strip()
+		except Exception:
+			pass
 
-			# 2) Se nada foi encontrado, captura trechos AF_initDataCallback relevantes
-			if not found:
-				blocks = re.findall(r'AF_initDataCallback\((\{.*?\})\);', text, re.S)
-				matches = []
-				for b in blocks:
-					if clean in b or symbol in b:
-						matches.append(b[:2000])
-				# salva ao menos um bloco bruto para investigação posterior
-				found["raw_matches"] = matches or (blocks[:1] if blocks else [])
+		try:
+			brapi_url = f"{BRAPI_BASE}/quote/{clean}"
+			br = http_get(brapi_url, params={"modules": "financialData,defaultKeyStatistics"})
+			br_entry = None
+			if isinstance(br, dict) and br.get("results"):
+				br_entry = br.get("results")[0]
+			elif isinstance(br, dict):
+				br_entry = br
+			if br_entry:
+				financial = br_entry.get("financialData") or {}
+				stats = br_entry.get("defaultKeyStatistics") or {}
+				if "P/L" not in found and br_entry.get("priceEarnings") is not None:
+					found["P/L"] = str(br_entry.get("priceEarnings"))
+				if "P/VPA" not in found and stats.get("priceToBook") is not None:
+					found["P/VPA"] = str(stats.get("priceToBook"))
+				if "ROE" not in found and financial.get("returnOnEquity") is not None:
+					found["ROE"] = str(financial.get("returnOnEquity"))
+				if "Margem Líquida" not in found and financial.get("profitMargins") is not None:
+					found["Margem Líquida"] = str(financial.get("profitMargins"))
+				if "Liquidez Corrente" not in found and financial.get("currentRatio") is not None:
+					found["Liquidez Corrente"] = str(financial.get("currentRatio"))
+				if financial.get("totalDebt") is not None and financial.get("totalCash") is not None and financial.get("ebitda") is not None:
+					total_debt = financial.get("totalDebt")
+					total_cash = financial.get("totalCash")
+					ebitda = financial.get("ebitda")
+					if isinstance(total_debt, (int, float)) and isinstance(total_cash, (int, float)) and isinstance(ebitda, (int, float)) and ebitda != 0:
+						found["Dívida Líquida / EBITDA"] = str((total_debt - total_cash) / ebitda)
+				if "Beta" not in found and stats.get("beta") is not None:
+					found["Beta"] = str(stats.get("beta"))
+				if "Market cap" not in found and br_entry.get("marketCap") is not None:
+					found["Market cap"] = str(br_entry.get("marketCap"))
+		except Exception:
+			pass
 
-			# 3) Consultar o brapi.dev como fallback para preencher/ajustar
-			#    principalmente os campos numéricos/estruturados.
-			try:
-				qsym = clean
-				brapi_url = f"{BRAPI_BASE}/quote/{qsym}"
-				br = http_get(brapi_url)
-				br_entry = None
-				if isinstance(br, dict) and br.get("results"):
-					br_entry = br.get("results")[0]
-				elif isinstance(br, dict):
-					br_entry = br
+		for required_key in ["DY", "P/L", "P/VPA", "ROE", "Margem Líquida", "Dívida Líquida / EBITDA", "Liquidez Corrente"]:
+			found.setdefault(required_key, None)
 
-				if br_entry:
-					# Preferir valores numéricos do brapi quando disponíveis
-					if "marketCap" in br_entry and br_entry.get("marketCap") is not None:
-						found["Market cap"] = str(br_entry.get("marketCap"))
-					if "priceEarnings" in br_entry and br_entry.get("priceEarnings") is not None:
-						found["P/E"] = str(br_entry.get("priceEarnings"))
-					if "earningsPerShare" in br_entry and br_entry.get("earningsPerShare") is not None:
-						found["EPS"] = str(br_entry.get("earningsPerShare"))
-					if "longName" in br_entry and br_entry.get("longName"):
-						found.setdefault("Name", br_entry.get("longName"))
-					if "fiftyTwoWeekLow" in br_entry and br_entry.get("fiftyTwoWeekLow") is not None:
-						found["52WeekLow"] = str(br_entry.get("fiftyTwoWeekLow"))
-					if "fiftyTwoWeekHigh" in br_entry and br_entry.get("fiftyTwoWeekHigh") is not None:
-						found["52WeekHigh"] = str(br_entry.get("fiftyTwoWeekHigh"))
-			except Exception:
-				pass
-
-			# Sanitizar números básicos (tentar extrair numeric/percent)
-			def _extract_number(s: str) -> Optional[str]:
-				if not isinstance(s, str):
-					return None
-				# procurar porcentagem
-				m = re.search(r"([-+]?[0-9]+\.?[0-9]*)%", s)
-				if m:
-					return m.group(1) + "%"
-				m = re.search(r"([-+]?[0-9]+\.?[0-9]*(?:e[-+]?[0-9]+)?)", s.replace(',',''), re.I)
-				if m:
-					return m.group(1)
-				return None
-
-			numeric_keys = ["Market cap", "P/E", "EPS", "P/B", "52WeekLow", "52WeekHigh", "Dividend yield", "Beta"]
-			for k in list(found.keys()):
-				if k in numeric_keys:
-					val = found.get(k)
-					num = _extract_number(val) if isinstance(val, str) else None
-					if num:
-						found[k] = num
-					else:
-						# remover valores estranhos
-						if isinstance(val, str) and len(val) > 200:
-							found[k] = val[:200]
-
-				# Extrair Beta do HTML se o valor atual não for numérico
-				if "Beta" not in found or (isinstance(found.get("Beta"), str) and not re.search(r"[-+]?[0-9]+\.?[0-9]*", found.get("Beta"))):
-					m_beta = re.search(r"Beta\s*[:\-–]?\s*([-+]?[0-9]+\.?[0-9]*)", text, re.I)
-					if m_beta:
-						found["Beta"] = m_beta.group(1)
-					else:
-						# remover Beta inválido se presente
-						if "Beta" in found:
-							del found["Beta"]
-			# Marcar origem simples
-			if "raw_matches" in found and br_entry:
-				found.setdefault("_source", "google+brapi_fallback")
-			elif "raw_matches" in found:
-				found.setdefault("_source", "google")
-			else:
-				found.setdefault("_source", "brapi")
-
-			results[symbol] = found
-		except requests.HTTPError as e:
-			results[symbol] = {"error": str(e)}
-		except Exception as e:
-			results[symbol] = {"error": f"unexpected: {e}"}
-
+		filter_info = _apply_filters(found)
+		found.update(filter_info)
+		results[symbol] = found
 		time.sleep(0.2)
 
-	return results
+	filtered_symbols = [s for s, v in results.items() if v.get("passes_filters")]
+	filtered_symbols.sort(key=lambda s: (_parse_float(results[s].get("P/L"), "P/L") if _parse_float(results[s].get("P/L"), "P/L") is not None else float("inf")))
+	return {"symbols": results, "filtered_symbols": filtered_symbols, "filtered_data": [results[s] for s in filtered_symbols]}
 
 
 # -------------------- Passo 5: Orquestração e persistência --------------------
