@@ -20,10 +20,26 @@ Por hora faça apenas isso, e por favor mostre um passo a passo em como usar o c
 
 -->
 
-
 <!-- Adicionar no git as modificações
     git status
     git add .
     git commit -m "..."
     git push -u origin main
+ -->
+
+ <!-- 3)
+    Crie pra mim uma tela frontend que monitore o mercado da bolsa de valores e mostre na tela 3 formas de informações: 
+
+    1) O usuário escolhe uma das 4 Formas: Cripto (Futuros), Cripto (Spot), Bolsa (trade), Bolsa (BuyAndHold)
+    2) Após a Escolha do usuário aparecer na tela informações sobre cada escolha: 
+      a) Cripto (Futuros), aparecer uma tabela com informações da seguinte forma nas colunas: NomeParCripto (Lembre-se, sempre par CriptoUsdt), Valor atual, qtd de quedas (quantas vezes o valor caiu 5% e aumentou para 15% no final do dia. Essas informações serão pegas no JSON com histórico de preços de 1 ano, de hoje a um ano atrás, e horarios durante o dia (horario inicial 9h ate as 23h)), valor descrescimo (5% a menos), valor futuro (valor descrescimo*15%) e % de vezes que que caiu 5% e subiu 15% durante um ano diariamente(% acerto).
+      b) Cripto (Spot), mesma coisa do a) mas com os ativos de SPOT apenas, sem mercados futuros. Faça a mesma coisa do a).
+      c) Bolsa (trade), aparecer na tela informações da seguinte forma nas colunas: Nome de Ativo, Valor atual, qtd de quedas, valor descrescimo (5% a menos do valor atual), valor futuro (15% sobre o valor descrescimo) e % de acerto.
+      d) Bolsa(BuyAndHold), se comparta da seguinte forma as colunas: Ativo, Valor atual, DY, P/L, P/VPA, ROE, Margem Líquida, Dívida Líquida / EBITDA, Liquidez Corrente e % de filtros aceitos (colocar em ordem do que estiver maior).
+   3) Colocar abaixo dessa tabela acima, apenas no Bolsa(BuyAndHold), a seguinte tabela e os 10 ativos mais vantajosos, segundo a tabela acima: 
+      Ativo,  Valor justo (Formula de graham), % de valorizaçao dos ultimos 5 anos.
+
+   Lembrando, segundo esse repositório aqui (https://github.com/William-vale/monitoramento_estatistico_bolsa_cripto) onde está todas as informações do projeto, as informações no front end devem ser preparadas para receber os dados do backend
+
+   Faça apenas isso, por favor. O Projeto é em React, usando o Vite e Typescript, use nesse padrão.
  -->

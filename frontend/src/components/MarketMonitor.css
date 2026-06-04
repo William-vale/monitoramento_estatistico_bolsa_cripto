@@ -1,0 +1,83 @@
+.market-monitor {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #60a5fa;
+}
+
+.selector {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.selector button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #1e2937;
+  color: #e2e8f0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.selector button.active,
+.selector button:hover {
+  background: #3b82f6;
+  transform: translateY(-2px);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  background: #1e2937;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #334155;
+}
+
+.data-table th {
+  background: #334155;
+  font-weight: 600;
+  color: #93c5fd;
+}
+
+.data-table tr:hover {
+  background: #253549;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #f87171;
+}
+
+.graham-table {
+  margin-top: 20px;
+}
