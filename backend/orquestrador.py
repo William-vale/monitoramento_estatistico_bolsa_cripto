@@ -69,8 +69,8 @@ for index, ticker in enumerate(acoes_filtradas, start=1):
         })
 
     if index % 50 == 0:
-        print(f"Checkpoint: {index} ações buscadas. Aguardando 15s antes de continuar...")
-        time.sleep(15)
+        print(f"Checkpoint: {index} ações buscadas. Aguardando 5s antes de continuar...")
+        time.sleep(5)
 
 # Construir a lista final de dados filtrados por ação
 dados_filtrados = []
@@ -186,12 +186,12 @@ for item in historico_precos:
         close_price = row["Close"]
 
         if open_price > 0:
-            # 1. Queda: Mínima caiu pelo menos 5% em relação à abertura, mas no máximo 8%
-            queda_minima = open_price * 0.95   # -5% 
-            queda_maxima = open_price * 0.92   # -8%
+            # 1. Queda: Mínima caiu pelo menos 0,5% em relação à abertura, mas no máximo 2,5%
+            queda_minima = open_price * 0.995   # -0,5% 
+            queda_maxima = open_price * 0.975   # -2,5%
             
-            # 2. Alta: Fechamento subiu cerca de 10% (ou mais) em relação à abertura
-            alta_esperada = open_price * 1.10  # +10%
+            # 2. Alta: Fechamento subiu cerca de 0,75% (ou mais) em relação à abertura
+            alta_esperada = open_price * 1.0075  # +0,75%
 
             if (low_price <= queda_minima) and (low_price >= queda_maxima) and (close_price >= alta_esperada):
                 vezes_padrao_atingido += 1
@@ -200,8 +200,8 @@ for item in historico_precos:
     porcentagem_acerto = (vezes_padrao_atingido / total_horas * 100) if total_horas > 0 else 0.0
     
     preco_atual = float(df["Close"].iloc[-1]) if total_horas > 0 else 0.0
-    preco_menos_5 = preco_atual * 0.95
-    preco_menos_5_mais_10 = preco_menos_5 * 1.10
+    preco_menos_05 = preco_atual * 0.995
+    preco_menos_05_mais_075 = preco_menos_05 * 1.0075
 
     # Estruturação limpa na ordem exata solicitada
     analise_trade_b3.append({
@@ -210,8 +210,8 @@ for item in historico_precos:
         "total_horas_analisadas": total_horas,
         "porcentagem_acerto": round(porcentagem_acerto, 2),
         "preco_atual": round(preco_atual, 2),
-        "preco_entrada_menos_5": round(preco_menos_5, 2),
-        "preco_alvo_mais_10": round(preco_menos_5_mais_10, 2)
+        "preco_entrada_menos_05": round(preco_menos_05, 2),
+        "preco_alvo_mais_075": round(preco_menos_05_mais_075, 2)
     })
 
 # Salva o arquivo final otimizado e leve

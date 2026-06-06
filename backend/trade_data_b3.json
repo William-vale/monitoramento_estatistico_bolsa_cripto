@@ -1,57 +1,57 @@
 [
     {
         "symbol": "AALR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 63,
         "total_horas_analisadas": 1624,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.88,
         "preco_atual": 3.12,
-        "preco_entrada_menos_5": 2.96,
-        "preco_alvo_mais_10": 3.26
+        "preco_entrada_menos_05": 3.1,
+        "preco_alvo_mais_075": 3.13
     },
     {
         "symbol": "ABCB4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.23,
         "preco_atual": 23.96,
-        "preco_entrada_menos_5": 22.76,
-        "preco_alvo_mais_10": 25.04
+        "preco_entrada_menos_05": 23.84,
+        "preco_alvo_mais_075": 24.02
     },
     {
         "symbol": "ABEV3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 16.21,
-        "preco_entrada_menos_5": 15.4,
-        "preco_alvo_mais_10": 16.94
+        "preco_entrada_menos_05": 16.13,
+        "preco_alvo_mais_075": 16.25
     },
     {
         "symbol": "AERI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 33,
         "total_horas_analisadas": 1717,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.92,
         "preco_atual": 2.34,
-        "preco_entrada_menos_5": 2.22,
-        "preco_alvo_mais_10": 2.45
+        "preco_entrada_menos_05": 2.33,
+        "preco_alvo_mais_075": 2.35
     },
     {
         "symbol": "AGRO3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.29,
         "preco_atual": 18.72,
-        "preco_entrada_menos_5": 17.78,
-        "preco_alvo_mais_10": 19.56
+        "preco_entrada_menos_05": 18.63,
+        "preco_alvo_mais_075": 18.77
     },
     {
         "symbol": "AGXY3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 34,
         "total_horas_analisadas": 1722,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.97,
         "preco_atual": 1.83,
-        "preco_entrada_menos_5": 1.74,
-        "preco_alvo_mais_10": 1.91
+        "preco_entrada_menos_05": 1.82,
+        "preco_alvo_mais_075": 1.83
     },
     {
         "symbol": "AHEB3.SA",
@@ -59,125 +59,125 @@
         "total_horas_analisadas": 55,
         "porcentagem_acerto": 0.0,
         "preco_atual": 24.0,
-        "preco_entrada_menos_5": 22.8,
-        "preco_alvo_mais_10": 25.08
+        "preco_entrada_menos_05": 23.88,
+        "preco_alvo_mais_075": 24.06
     },
     {
         "symbol": "ALLD3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 19,
         "total_horas_analisadas": 1728,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.1,
         "preco_atual": 5.44,
-        "preco_entrada_menos_5": 5.17,
-        "preco_alvo_mais_10": 5.68
+        "preco_entrada_menos_05": 5.41,
+        "preco_alvo_mais_075": 5.45
     },
     {
         "symbol": "ALOS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 11,
         "total_horas_analisadas": 1730,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.64,
         "preco_atual": 26.97,
-        "preco_entrada_menos_5": 25.62,
-        "preco_alvo_mais_10": 28.18
+        "preco_entrada_menos_05": 26.84,
+        "preco_alvo_mais_075": 27.04
     },
     {
         "symbol": "ALPA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 27,
         "total_horas_analisadas": 1221,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.21,
         "preco_atual": 9.96,
-        "preco_entrada_menos_5": 9.46,
-        "preco_alvo_mais_10": 10.41
+        "preco_entrada_menos_05": 9.91,
+        "preco_alvo_mais_075": 9.98
     },
     {
         "symbol": "ALPA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.62,
         "preco_atual": 11.92,
-        "preco_entrada_menos_5": 11.32,
-        "preco_alvo_mais_10": 12.46
+        "preco_entrada_menos_05": 11.86,
+        "preco_alvo_mais_075": 11.95
     },
     {
         "symbol": "ALPK3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 64,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.7,
         "preco_atual": 4.32,
-        "preco_entrada_menos_5": 4.1,
-        "preco_alvo_mais_10": 4.51
+        "preco_entrada_menos_05": 4.3,
+        "preco_alvo_mais_075": 4.33
     },
     {
         "symbol": "ALUP3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 18,
         "total_horas_analisadas": 1494,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.2,
         "preco_atual": 12.02,
-        "preco_entrada_menos_5": 11.42,
-        "preco_alvo_mais_10": 12.56
+        "preco_entrada_menos_05": 11.96,
+        "preco_alvo_mais_075": 12.05
     },
     {
         "symbol": "ALUP4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 19,
         "total_horas_analisadas": 1646,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.15,
         "preco_atual": 10.08,
-        "preco_entrada_menos_5": 9.58,
-        "preco_alvo_mais_10": 10.53
+        "preco_entrada_menos_05": 10.03,
+        "preco_alvo_mais_075": 10.1
     },
     {
         "symbol": "AMAR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 116,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 6.7,
         "preco_atual": 0.59,
-        "preco_entrada_menos_5": 0.56,
-        "preco_alvo_mais_10": 0.62
+        "preco_entrada_menos_05": 0.59,
+        "preco_alvo_mais_075": 0.59
     },
     {
         "symbol": "AMBP3.SA",
-        "padrao_atingido_vezes": 1,
+        "padrao_atingido_vezes": 49,
         "total_horas_analisadas": 1730,
-        "porcentagem_acerto": 0.06,
+        "porcentagem_acerto": 2.83,
         "preco_atual": 0.16,
-        "preco_entrada_menos_5": 0.15,
-        "preco_alvo_mais_10": 0.17
+        "preco_entrada_menos_05": 0.16,
+        "preco_alvo_mais_075": 0.16
     },
     {
         "symbol": "AMER3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 85,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.91,
         "preco_atual": 4.82,
-        "preco_entrada_menos_5": 4.58,
-        "preco_alvo_mais_10": 5.04
+        "preco_entrada_menos_05": 4.8,
+        "preco_alvo_mais_075": 4.83
     },
     {
         "symbol": "AMOB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 64,
         "total_horas_analisadas": 1716,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.73,
         "preco_atual": 13.03,
-        "preco_entrada_menos_5": 12.38,
-        "preco_alvo_mais_10": 13.62
+        "preco_entrada_menos_05": 12.96,
+        "preco_alvo_mais_075": 13.06
     },
     {
         "symbol": "ANIM3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 92,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.31,
         "preco_atual": 3.07,
-        "preco_entrada_menos_5": 2.92,
-        "preco_alvo_mais_10": 3.21
+        "preco_entrada_menos_05": 3.05,
+        "preco_alvo_mais_075": 3.08
     },
     {
         "symbol": "ARML3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 118,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 6.81,
         "preco_atual": 3.33,
-        "preco_entrada_menos_5": 3.16,
-        "preco_alvo_mais_10": 3.48
+        "preco_entrada_menos_05": 3.31,
+        "preco_alvo_mais_075": 3.34
     },
     {
         "symbol": "ARND3.SA",
@@ -185,156 +185,156 @@
     },
     {
         "symbol": "ASAI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 54,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.12,
         "preco_atual": 8.62,
-        "preco_entrada_menos_5": 8.19,
-        "preco_alvo_mais_10": 9.01
+        "preco_entrada_menos_05": 8.58,
+        "preco_alvo_mais_075": 8.64
     },
     {
         "symbol": "ATED3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 12,
         "total_horas_analisadas": 858,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.4,
         "preco_atual": 2.14,
-        "preco_entrada_menos_5": 2.03,
-        "preco_alvo_mais_10": 2.24
+        "preco_entrada_menos_05": 2.13,
+        "preco_alvo_mais_075": 2.15
     },
     {
         "symbol": "AUAU3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 33,
         "total_horas_analisadas": 717,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.6,
         "preco_atual": 3.19,
-        "preco_entrada_menos_5": 3.03,
-        "preco_alvo_mais_10": 3.33
+        "preco_entrada_menos_05": 3.17,
+        "preco_alvo_mais_075": 3.2
     },
     {
         "symbol": "AURE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 30,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.73,
         "preco_atual": 11.77,
-        "preco_entrada_menos_5": 11.18,
-        "preco_alvo_mais_10": 12.3
+        "preco_entrada_menos_05": 11.71,
+        "preco_alvo_mais_075": 11.8
     },
     {
         "symbol": "AVLL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 15,
         "total_horas_analisadas": 898,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.67,
         "preco_atual": 0.63,
-        "preco_entrada_menos_5": 0.6,
-        "preco_alvo_mais_10": 0.66
+        "preco_entrada_menos_05": 0.63,
+        "preco_alvo_mais_075": 0.63
     },
     {
         "symbol": "AXIA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 10,
         "total_horas_analisadas": 962,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.04,
         "preco_atual": 50.47,
-        "preco_entrada_menos_5": 47.95,
-        "preco_alvo_mais_10": 52.74
+        "preco_entrada_menos_05": 50.22,
+        "preco_alvo_mais_075": 50.59
     },
     {
         "symbol": "AZEV3.SA",
-        "padrao_atingido_vezes": 1,
+        "padrao_atingido_vezes": 20,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.06,
+        "porcentagem_acerto": 1.15,
         "preco_atual": 0.16,
-        "preco_entrada_menos_5": 0.15,
-        "preco_alvo_mais_10": 0.17
+        "preco_entrada_menos_05": 0.16,
+        "preco_alvo_mais_075": 0.16
     },
     {
         "symbol": "AZEV4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.62,
         "preco_atual": 0.12,
-        "preco_entrada_menos_5": 0.11,
-        "preco_alvo_mais_10": 0.13
+        "preco_entrada_menos_05": 0.12,
+        "preco_alvo_mais_075": 0.12
     },
     {
         "symbol": "AZTE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 54,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.12,
         "preco_atual": 0.2,
-        "preco_entrada_menos_5": 0.19,
-        "preco_alvo_mais_10": 0.21
+        "preco_entrada_menos_05": 0.2,
+        "preco_alvo_mais_075": 0.2
     },
     {
         "symbol": "AZUL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 216,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 6.48,
         "preco_atual": 22.0,
-        "preco_entrada_menos_5": 20.9,
-        "preco_alvo_mais_10": 22.99
+        "preco_entrada_menos_05": 21.89,
+        "preco_alvo_mais_075": 22.05
     },
     {
         "symbol": "AZZA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 48,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.77,
         "preco_atual": 17.3,
-        "preco_entrada_menos_5": 16.43,
-        "preco_alvo_mais_10": 18.08
+        "preco_entrada_menos_05": 17.21,
+        "preco_alvo_mais_075": 17.34
     },
     {
         "symbol": "BALM4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 491,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.81,
         "preco_atual": 18.9,
-        "preco_entrada_menos_5": 17.95,
-        "preco_alvo_mais_10": 19.75
+        "preco_entrada_menos_05": 18.81,
+        "preco_alvo_mais_075": 18.95
     },
     {
         "symbol": "BAZA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 6,
         "total_horas_analisadas": 1443,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.42,
         "preco_atual": 66.72,
-        "preco_entrada_menos_5": 63.38,
-        "preco_alvo_mais_10": 69.72
+        "preco_entrada_menos_05": 66.39,
+        "preco_alvo_mais_075": 66.88
     },
     {
         "symbol": "BBAS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 19.3,
-        "preco_entrada_menos_5": 18.33,
-        "preco_alvo_mais_10": 20.17
+        "preco_entrada_menos_05": 19.2,
+        "preco_alvo_mais_075": 19.35
     },
     {
         "symbol": "BBDC3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 15.2,
-        "preco_entrada_menos_5": 14.44,
-        "preco_alvo_mais_10": 15.88
+        "preco_entrada_menos_05": 15.12,
+        "preco_alvo_mais_075": 15.24
     },
     {
         "symbol": "BBDC4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 11,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.64,
         "preco_atual": 17.45,
-        "preco_entrada_menos_5": 16.58,
-        "preco_alvo_mais_10": 18.24
+        "preco_entrada_menos_05": 17.36,
+        "preco_alvo_mais_075": 17.49
     },
     {
         "symbol": "BBSE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.29,
         "preco_atual": 35.47,
-        "preco_entrada_menos_5": 33.7,
-        "preco_alvo_mais_10": 37.07
+        "preco_entrada_menos_05": 35.29,
+        "preco_alvo_mais_075": 35.56
     },
     {
         "symbol": "BDLL3.SA",
@@ -342,269 +342,269 @@
         "total_horas_analisadas": 45,
         "porcentagem_acerto": 0.0,
         "preco_atual": 7.9,
-        "preco_entrada_menos_5": 7.51,
-        "preco_alvo_mais_10": 8.26
+        "preco_entrada_menos_05": 7.86,
+        "preco_alvo_mais_075": 7.92
     },
     {
         "symbol": "BDLL4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 1,
         "total_horas_analisadas": 169,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.59,
         "preco_atual": 3.98,
-        "preco_entrada_menos_5": 3.78,
-        "preco_alvo_mais_10": 4.16
+        "preco_entrada_menos_05": 3.96,
+        "preco_alvo_mais_075": 3.99
     },
     {
         "symbol": "BEEF3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 53,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.06,
         "preco_atual": 3.69,
-        "preco_entrada_menos_5": 3.51,
-        "preco_alvo_mais_10": 3.86
+        "preco_entrada_menos_05": 3.67,
+        "preco_alvo_mais_075": 3.7
     },
     {
         "symbol": "BEES3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 1678,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.24,
         "preco_atual": 8.62,
-        "preco_entrada_menos_5": 8.19,
-        "preco_alvo_mais_10": 9.01
+        "preco_entrada_menos_05": 8.58,
+        "preco_alvo_mais_075": 8.64
     },
     {
         "symbol": "BEES4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 6,
         "total_horas_analisadas": 1420,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.42,
         "preco_atual": 8.7,
-        "preco_entrada_menos_5": 8.26,
-        "preco_alvo_mais_10": 9.09
+        "preco_entrada_menos_05": 8.66,
+        "preco_alvo_mais_075": 8.72
     },
     {
         "symbol": "BGIP4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 7,
         "total_horas_analisadas": 777,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.9,
         "preco_atual": 30.91,
-        "preco_entrada_menos_5": 29.36,
-        "preco_alvo_mais_10": 32.3
+        "preco_entrada_menos_05": 30.76,
+        "preco_alvo_mais_075": 30.99
     },
     {
         "symbol": "BHIA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 87,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.02,
         "preco_atual": 1.25,
-        "preco_entrada_menos_5": 1.19,
-        "preco_alvo_mais_10": 1.31
+        "preco_entrada_menos_05": 1.24,
+        "preco_alvo_mais_075": 1.25
     },
     {
         "symbol": "BIED3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 7,
         "total_horas_analisadas": 616,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.14,
         "preco_atual": 9.11,
-        "preco_entrada_menos_5": 8.65,
-        "preco_alvo_mais_10": 9.52
+        "preco_entrada_menos_05": 9.06,
+        "preco_alvo_mais_075": 9.13
     },
     {
         "symbol": "BIOM3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 72,
         "total_horas_analisadas": 1573,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.58,
         "preco_atual": 6.84,
-        "preco_entrada_menos_5": 6.5,
-        "preco_alvo_mais_10": 7.15
+        "preco_entrada_menos_05": 6.81,
+        "preco_alvo_mais_075": 6.86
     },
     {
         "symbol": "BLAU3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 10.06,
-        "preco_entrada_menos_5": 9.56,
-        "preco_alvo_mais_10": 10.51
+        "preco_entrada_menos_05": 10.01,
+        "preco_alvo_mais_075": 10.08
     },
     {
         "symbol": "BMEB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 741,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.21,
         "preco_atual": 58.1,
-        "preco_entrada_menos_5": 55.19,
-        "preco_alvo_mais_10": 60.71
+        "preco_entrada_menos_05": 57.81,
+        "preco_alvo_mais_075": 58.24
     },
     {
         "symbol": "BMEB4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 52,
         "total_horas_analisadas": 1730,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.01,
         "preco_atual": 77.0,
-        "preco_entrada_menos_5": 73.15,
-        "preco_alvo_mais_10": 80.47
+        "preco_entrada_menos_05": 76.61,
+        "preco_alvo_mais_075": 77.19
     },
     {
         "symbol": "BMGB4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 21,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.21,
         "preco_atual": 5.0,
-        "preco_entrada_menos_5": 4.75,
-        "preco_alvo_mais_10": 5.23
+        "preco_entrada_menos_05": 4.97,
+        "preco_alvo_mais_075": 5.01
     },
     {
         "symbol": "BMIN4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 1,
         "total_horas_analisadas": 195,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.51,
         "preco_atual": 17.85,
-        "preco_entrada_menos_5": 16.96,
-        "preco_alvo_mais_10": 18.65
+        "preco_entrada_menos_05": 17.76,
+        "preco_alvo_mais_075": 17.89
     },
     {
         "symbol": "BMKS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 10,
         "total_horas_analisadas": 1064,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.94,
         "preco_atual": 389.92,
-        "preco_entrada_menos_5": 370.42,
-        "preco_alvo_mais_10": 407.47
+        "preco_entrada_menos_05": 387.97,
+        "preco_alvo_mais_075": 390.88
     },
     {
         "symbol": "BMOB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 34,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.96,
         "preco_atual": 23.31,
-        "preco_entrada_menos_5": 22.14,
-        "preco_alvo_mais_10": 24.36
+        "preco_entrada_menos_05": 23.19,
+        "preco_alvo_mais_075": 23.37
     },
     {
         "symbol": "BOBR4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 393,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.02,
         "preco_atual": 1.38,
-        "preco_entrada_menos_5": 1.31,
-        "preco_alvo_mais_10": 1.44
+        "preco_entrada_menos_05": 1.37,
+        "preco_alvo_mais_075": 1.38
     },
     {
         "symbol": "BPAC3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 25,
         "total_horas_analisadas": 1451,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.72,
         "preco_atual": 22.34,
-        "preco_entrada_menos_5": 21.22,
-        "preco_alvo_mais_10": 23.35
+        "preco_entrada_menos_05": 22.23,
+        "preco_alvo_mais_075": 22.4
     },
     {
         "symbol": "BRAP3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 1729,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.23,
         "preco_atual": 18.88,
-        "preco_entrada_menos_5": 17.94,
-        "preco_alvo_mais_10": 19.73
+        "preco_entrada_menos_05": 18.79,
+        "preco_alvo_mais_075": 18.93
     },
     {
         "symbol": "BRAP4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.29,
         "preco_atual": 21.75,
-        "preco_entrada_menos_5": 20.66,
-        "preco_alvo_mais_10": 22.73
+        "preco_entrada_menos_05": 21.64,
+        "preco_alvo_mais_075": 21.8
     },
     {
         "symbol": "BRAV3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 47,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.71,
         "preco_atual": 21.01,
-        "preco_entrada_menos_5": 19.96,
-        "preco_alvo_mais_10": 21.96
+        "preco_entrada_menos_05": 20.9,
+        "preco_alvo_mais_075": 21.06
     },
     {
         "symbol": "BRKM3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 85,
         "total_horas_analisadas": 1616,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.26,
         "preco_atual": 6.75,
-        "preco_entrada_menos_5": 6.41,
-        "preco_alvo_mais_10": 7.05
+        "preco_entrada_menos_05": 6.72,
+        "preco_alvo_mais_075": 6.77
     },
     {
         "symbol": "BRSR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 1552,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.9,
         "preco_atual": 16.9,
-        "preco_entrada_menos_5": 16.05,
-        "preco_alvo_mais_10": 17.66
+        "preco_entrada_menos_05": 16.82,
+        "preco_alvo_mais_075": 16.94
     },
     {
         "symbol": "BRST3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 25,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.44,
         "preco_atual": 2.7,
-        "preco_entrada_menos_5": 2.57,
-        "preco_alvo_mais_10": 2.82
+        "preco_entrada_menos_05": 2.69,
+        "preco_alvo_mais_075": 2.71
     },
     {
         "symbol": "BSLI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 41,
         "total_horas_analisadas": 1155,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.55,
         "preco_atual": 3.33,
-        "preco_entrada_menos_5": 3.16,
-        "preco_alvo_mais_10": 3.48
+        "preco_entrada_menos_05": 3.31,
+        "preco_alvo_mais_075": 3.34
     },
     {
         "symbol": "BSLI4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 34,
         "total_horas_analisadas": 1129,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.01,
         "preco_atual": 3.85,
-        "preco_entrada_menos_5": 3.66,
-        "preco_alvo_mais_10": 4.02
+        "preco_entrada_menos_05": 3.83,
+        "preco_alvo_mais_075": 3.86
     },
     {
         "symbol": "CAMB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1595,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.82,
         "preco_atual": 9.65,
-        "preco_entrada_menos_5": 9.17,
-        "preco_alvo_mais_10": 10.08
+        "preco_entrada_menos_05": 9.6,
+        "preco_alvo_mais_075": 9.67
     },
     {
         "symbol": "CAML3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 32,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.85,
         "preco_atual": 4.96,
-        "preco_entrada_menos_5": 4.71,
-        "preco_alvo_mais_10": 5.18
+        "preco_entrada_menos_05": 4.94,
+        "preco_alvo_mais_075": 4.97
     },
     {
         "symbol": "CASH3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 88,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.08,
         "preco_atual": 3.88,
-        "preco_entrada_menos_5": 3.69,
-        "preco_alvo_mais_10": 4.05
+        "preco_entrada_menos_05": 3.86,
+        "preco_alvo_mais_075": 3.89
     },
     {
         "symbol": "CBAV3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 44,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.54,
         "preco_atual": 10.76,
-        "preco_entrada_menos_5": 10.22,
-        "preco_alvo_mais_10": 11.24
+        "preco_entrada_menos_05": 10.71,
+        "preco_alvo_mais_075": 10.79
     },
     {
         "symbol": "CBEE3.SA",
@@ -612,44 +612,44 @@
         "total_horas_analisadas": 135,
         "porcentagem_acerto": 0.0,
         "preco_atual": 15.31,
-        "preco_entrada_menos_5": 14.54,
-        "preco_alvo_mais_10": 16.0
+        "preco_entrada_menos_05": 15.23,
+        "preco_alvo_mais_075": 15.35
     },
     {
         "symbol": "CEAB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 70,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.04,
         "preco_atual": 11.42,
-        "preco_entrada_menos_5": 10.85,
-        "preco_alvo_mais_10": 11.93
+        "preco_entrada_menos_05": 11.36,
+        "preco_alvo_mais_075": 11.45
     },
     {
         "symbol": "CEBR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1355,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.59,
         "preco_atual": 27.3,
-        "preco_entrada_menos_5": 25.93,
-        "preco_alvo_mais_10": 28.53
+        "preco_entrada_menos_05": 27.16,
+        "preco_alvo_mais_075": 27.37
     },
     {
         "symbol": "CGRA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 2,
         "total_horas_analisadas": 744,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.27,
         "preco_atual": 24.55,
-        "preco_entrada_menos_5": 23.32,
-        "preco_alvo_mais_10": 25.65
+        "preco_entrada_menos_05": 24.43,
+        "preco_alvo_mais_075": 24.61
     },
     {
         "symbol": "CGRA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 1525,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.33,
         "preco_atual": 24.88,
-        "preco_entrada_menos_5": 23.64,
-        "preco_alvo_mais_10": 26.0
+        "preco_entrada_menos_05": 24.76,
+        "preco_alvo_mais_075": 24.94
     },
     {
         "symbol": "CLSC3.SA",
@@ -657,233 +657,233 @@
         "total_horas_analisadas": 165,
         "porcentagem_acerto": 0.0,
         "preco_atual": 129.95,
-        "preco_entrada_menos_5": 123.45,
-        "preco_alvo_mais_10": 135.8
+        "preco_entrada_menos_05": 129.3,
+        "preco_alvo_mais_075": 130.27
     },
     {
         "symbol": "CLSC4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1303,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.61,
         "preco_atual": 135.56,
-        "preco_entrada_menos_5": 128.78,
-        "preco_alvo_mais_10": 141.66
+        "preco_entrada_menos_05": 134.88,
+        "preco_alvo_mais_075": 135.89
     },
     {
         "symbol": "CMIG3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.75,
         "preco_atual": 15.84,
-        "preco_entrada_menos_5": 15.05,
-        "preco_alvo_mais_10": 16.55
+        "preco_entrada_menos_05": 15.76,
+        "preco_alvo_mais_075": 15.88
     },
     {
         "symbol": "CMIG4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 10.88,
-        "preco_entrada_menos_5": 10.34,
-        "preco_alvo_mais_10": 11.37
+        "preco_entrada_menos_05": 10.83,
+        "preco_alvo_mais_075": 10.91
     },
     {
         "symbol": "CMIN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 25,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.44,
         "preco_atual": 4.37,
-        "preco_entrada_menos_5": 4.15,
-        "preco_alvo_mais_10": 4.57
+        "preco_entrada_menos_05": 4.35,
+        "preco_alvo_mais_075": 4.38
     },
     {
         "symbol": "COGN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 57,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.29,
         "preco_atual": 2.42,
-        "preco_entrada_menos_5": 2.3,
-        "preco_alvo_mais_10": 2.53
+        "preco_entrada_menos_05": 2.41,
+        "preco_alvo_mais_075": 2.43
     },
     {
         "symbol": "CPFE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.52,
         "preco_atual": 42.58,
-        "preco_entrada_menos_5": 40.45,
-        "preco_alvo_mais_10": 44.5
+        "preco_entrada_menos_05": 42.37,
+        "preco_alvo_mais_075": 42.68
     },
     {
         "symbol": "CPLE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 16,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.92,
         "preco_atual": 14.41,
-        "preco_entrada_menos_5": 13.69,
-        "preco_alvo_mais_10": 15.06
+        "preco_entrada_menos_05": 14.34,
+        "preco_alvo_mais_075": 14.45
     },
     {
         "symbol": "CSAN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 73,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.21,
         "preco_atual": 3.59,
-        "preco_entrada_menos_5": 3.41,
-        "preco_alvo_mais_10": 3.75
+        "preco_entrada_menos_05": 3.57,
+        "preco_alvo_mais_075": 3.6
     },
     {
         "symbol": "CSED3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 48,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.77,
         "preco_atual": 3.89,
-        "preco_entrada_menos_5": 3.7,
-        "preco_alvo_mais_10": 4.07
+        "preco_entrada_menos_05": 3.87,
+        "preco_alvo_mais_075": 3.9
     },
     {
         "symbol": "CSMG3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 24,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.39,
         "preco_atual": 56.85,
-        "preco_entrada_menos_5": 54.01,
-        "preco_alvo_mais_10": 59.41
+        "preco_entrada_menos_05": 56.57,
+        "preco_alvo_mais_075": 56.99
     },
     {
         "symbol": "CSNA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 41,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.37,
         "preco_atual": 6.03,
-        "preco_entrada_menos_5": 5.73,
-        "preco_alvo_mais_10": 6.3
+        "preco_entrada_menos_05": 6.0,
+        "preco_alvo_mais_075": 6.04
     },
     {
         "symbol": "CSUD3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1722,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.52,
         "preco_atual": 16.51,
-        "preco_entrada_menos_5": 15.68,
-        "preco_alvo_mais_10": 17.25
+        "preco_entrada_menos_05": 16.43,
+        "preco_alvo_mais_075": 16.55
     },
     {
         "symbol": "CTKA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 289,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.38,
         "preco_atual": 34.25,
-        "preco_entrada_menos_5": 32.54,
-        "preco_alvo_mais_10": 35.79
+        "preco_entrada_menos_05": 34.08,
+        "preco_alvo_mais_075": 34.33
     },
     {
         "symbol": "CURY3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 21,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.21,
         "preco_atual": 28.7,
-        "preco_entrada_menos_5": 27.27,
-        "preco_alvo_mais_10": 29.99
+        "preco_entrada_menos_05": 28.56,
+        "preco_alvo_mais_075": 28.77
     },
     {
         "symbol": "CVCB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 103,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.95,
         "preco_atual": 1.45,
-        "preco_entrada_menos_5": 1.38,
-        "preco_alvo_mais_10": 1.52
+        "preco_entrada_menos_05": 1.44,
+        "preco_alvo_mais_075": 1.45
     },
     {
         "symbol": "CXSE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.23,
         "preco_atual": 17.63,
-        "preco_entrada_menos_5": 16.75,
-        "preco_alvo_mais_10": 18.42
+        "preco_entrada_menos_05": 17.54,
+        "preco_alvo_mais_075": 17.67
     },
     {
         "symbol": "CYRE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 27,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.56,
         "preco_atual": 19.95,
-        "preco_entrada_menos_5": 18.95,
-        "preco_alvo_mais_10": 20.85
+        "preco_entrada_menos_05": 19.85,
+        "preco_alvo_mais_075": 20.0
     },
     {
         "symbol": "CYRE4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 544,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.57,
         "preco_atual": 18.28,
-        "preco_entrada_menos_5": 17.37,
-        "preco_alvo_mais_10": 19.1
+        "preco_entrada_menos_05": 18.19,
+        "preco_alvo_mais_075": 18.33
     },
     {
         "symbol": "DASA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 168,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 9.7,
         "preco_atual": 2.74,
-        "preco_entrada_menos_5": 2.6,
-        "preco_alvo_mais_10": 2.86
+        "preco_entrada_menos_05": 2.73,
+        "preco_alvo_mais_075": 2.75
     },
     {
         "symbol": "DESK3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 48,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.77,
         "preco_atual": 18.03,
-        "preco_entrada_menos_5": 17.13,
-        "preco_alvo_mais_10": 18.84
+        "preco_entrada_menos_05": 17.94,
+        "preco_alvo_mais_075": 18.07
     },
     {
         "symbol": "DEXP3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 17,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.98,
         "preco_atual": 6.99,
-        "preco_entrada_menos_5": 6.64,
-        "preco_alvo_mais_10": 7.3
+        "preco_entrada_menos_05": 6.96,
+        "preco_alvo_mais_075": 7.01
     },
     {
         "symbol": "DEXP4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 672,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.74,
         "preco_atual": 6.98,
-        "preco_entrada_menos_5": 6.63,
-        "preco_alvo_mais_10": 7.29
+        "preco_entrada_menos_05": 6.95,
+        "preco_alvo_mais_075": 7.0
     },
     {
         "symbol": "DIRR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 32,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.85,
         "preco_atual": 12.35,
-        "preco_entrada_menos_5": 11.73,
-        "preco_alvo_mais_10": 12.91
+        "preco_entrada_menos_05": 12.29,
+        "preco_alvo_mais_075": 12.38
     },
     {
         "symbol": "DMVF3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 36,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.08,
         "preco_atual": 7.01,
-        "preco_entrada_menos_5": 6.66,
-        "preco_alvo_mais_10": 7.33
+        "preco_entrada_menos_05": 6.97,
+        "preco_alvo_mais_075": 7.03
     },
     {
         "symbol": "DOTZ3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 45,
         "total_horas_analisadas": 1701,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.65,
         "preco_atual": 3.95,
-        "preco_entrada_menos_5": 3.75,
-        "preco_alvo_mais_10": 4.13
+        "preco_entrada_menos_05": 3.93,
+        "preco_alvo_mais_075": 3.96
     },
     {
         "symbol": "DTCY3.SA",
@@ -891,125 +891,125 @@
         "total_horas_analisadas": 69,
         "porcentagem_acerto": 0.0,
         "preco_atual": 2.45,
-        "preco_entrada_menos_5": 2.33,
-        "preco_alvo_mais_10": 2.56
+        "preco_entrada_menos_05": 2.44,
+        "preco_alvo_mais_075": 2.46
     },
     {
         "symbol": "DXCO3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 4.56,
-        "preco_entrada_menos_5": 4.33,
-        "preco_alvo_mais_10": 4.77
+        "preco_entrada_menos_05": 4.54,
+        "preco_alvo_mais_075": 4.57
     },
     {
         "symbol": "EALT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 2,
         "total_horas_analisadas": 450,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.44,
         "preco_atual": 13.48,
-        "preco_entrada_menos_5": 12.81,
-        "preco_alvo_mais_10": 14.09
+        "preco_entrada_menos_05": 13.41,
+        "preco_alvo_mais_075": 13.51
     },
     {
         "symbol": "EALT4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 10,
         "total_horas_analisadas": 1523,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.66,
         "preco_atual": 12.05,
-        "preco_entrada_menos_5": 11.45,
-        "preco_alvo_mais_10": 12.59
+        "preco_entrada_menos_05": 11.99,
+        "preco_alvo_mais_075": 12.08
     },
     {
         "symbol": "ECOR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 40,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.31,
         "preco_atual": 7.26,
-        "preco_entrada_menos_5": 6.9,
-        "preco_alvo_mais_10": 7.59
+        "preco_entrada_menos_05": 7.22,
+        "preco_alvo_mais_075": 7.28
     },
     {
         "symbol": "EGIE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 33.8,
-        "preco_entrada_menos_5": 32.11,
-        "preco_alvo_mais_10": 35.32
+        "preco_entrada_menos_05": 33.63,
+        "preco_alvo_mais_075": 33.88
     },
     {
         "symbol": "EKTR4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 2,
         "total_horas_analisadas": 479,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.42,
         "preco_atual": 37.85,
-        "preco_entrada_menos_5": 35.96,
-        "preco_alvo_mais_10": 39.55
+        "preco_entrada_menos_05": 37.66,
+        "preco_alvo_mais_075": 37.94
     },
     {
         "symbol": "EMAE4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1203,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.33,
         "preco_atual": 37.5,
-        "preco_entrada_menos_5": 35.62,
-        "preco_alvo_mais_10": 39.19
+        "preco_entrada_menos_05": 37.31,
+        "preco_alvo_mais_075": 37.59
     },
     {
         "symbol": "EMBJ3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 995,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.41,
         "preco_atual": 73.0,
-        "preco_entrada_menos_5": 69.35,
-        "preco_alvo_mais_10": 76.28
+        "preco_entrada_menos_05": 72.64,
+        "preco_alvo_mais_075": 73.18
     },
     {
         "symbol": "ENEV3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 22,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.27,
         "preco_atual": 23.99,
-        "preco_entrada_menos_5": 22.79,
-        "preco_alvo_mais_10": 25.07
+        "preco_entrada_menos_05": 23.87,
+        "preco_alvo_mais_075": 24.05
     },
     {
         "symbol": "ENGI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 25,
         "total_horas_analisadas": 1464,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.71,
         "preco_atual": 11.94,
-        "preco_entrada_menos_5": 11.34,
-        "preco_alvo_mais_10": 12.48
+        "preco_entrada_menos_05": 11.88,
+        "preco_alvo_mais_075": 11.97
     },
     {
         "symbol": "ENGI4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1460,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.89,
         "preco_atual": 8.68,
-        "preco_entrada_menos_5": 8.25,
-        "preco_alvo_mais_10": 9.07
+        "preco_entrada_menos_05": 8.64,
+        "preco_alvo_mais_075": 8.7
     },
     {
         "symbol": "ENJU3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 168,
         "total_horas_analisadas": 1722,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 9.76,
         "preco_atual": 1.06,
-        "preco_entrada_menos_5": 1.01,
-        "preco_alvo_mais_10": 1.11
+        "preco_entrada_menos_05": 1.05,
+        "preco_alvo_mais_075": 1.06
     },
     {
         "symbol": "ENMT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 3,
         "total_horas_analisadas": 262,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.15,
         "preco_atual": 39.0,
-        "preco_entrada_menos_5": 37.05,
-        "preco_alvo_mais_10": 40.76
+        "preco_entrada_menos_05": 38.8,
+        "preco_alvo_mais_075": 39.1
     },
     {
         "symbol": "ENMT4.SA",
@@ -1017,44 +1017,44 @@
         "total_horas_analisadas": 123,
         "porcentagem_acerto": 0.0,
         "preco_atual": 39.0,
-        "preco_entrada_menos_5": 37.05,
-        "preco_alvo_mais_10": 40.76
+        "preco_entrada_menos_05": 38.8,
+        "preco_alvo_mais_075": 39.1
     },
     {
         "symbol": "EPAR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 12,
         "total_horas_analisadas": 1357,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.88,
         "preco_atual": 1.75,
-        "preco_entrada_menos_5": 1.66,
-        "preco_alvo_mais_10": 1.83
+        "preco_entrada_menos_05": 1.74,
+        "preco_alvo_mais_075": 1.75
     },
     {
         "symbol": "EQPA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1315,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.99,
         "preco_atual": 5.88,
-        "preco_entrada_menos_5": 5.59,
-        "preco_alvo_mais_10": 6.14
+        "preco_entrada_menos_05": 5.85,
+        "preco_alvo_mais_075": 5.89
     },
     {
         "symbol": "EQTL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 10,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.58,
         "preco_atual": 39.05,
-        "preco_entrada_menos_5": 37.1,
-        "preco_alvo_mais_10": 40.81
+        "preco_entrada_menos_05": 38.85,
+        "preco_alvo_mais_075": 39.15
     },
     {
         "symbol": "ESPA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 144,
         "total_horas_analisadas": 1718,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 8.38,
         "preco_atual": 0.78,
-        "preco_entrada_menos_5": 0.74,
-        "preco_alvo_mais_10": 0.82
+        "preco_entrada_menos_05": 0.78,
+        "preco_alvo_mais_075": 0.78
     },
     {
         "symbol": "ESTR4.SA",
@@ -1062,656 +1062,656 @@
         "total_horas_analisadas": 133,
         "porcentagem_acerto": 0.0,
         "preco_atual": 4.0,
-        "preco_entrada_menos_5": 3.8,
-        "preco_alvo_mais_10": 4.18
+        "preco_entrada_menos_05": 3.98,
+        "preco_alvo_mais_075": 4.01
     },
     {
         "symbol": "ETER3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 20,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.15,
         "preco_atual": 3.53,
-        "preco_entrada_menos_5": 3.35,
-        "preco_alvo_mais_10": 3.69
+        "preco_entrada_menos_05": 3.51,
+        "preco_alvo_mais_075": 3.54
     },
     {
         "symbol": "EUCA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 25.33,
-        "preco_entrada_menos_5": 24.06,
-        "preco_alvo_mais_10": 26.47
+        "preco_entrada_menos_05": 25.2,
+        "preco_alvo_mais_075": 25.39
     },
     {
         "symbol": "EVEN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 33,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.91,
         "preco_atual": 5.26,
-        "preco_entrada_menos_5": 5.0,
-        "preco_alvo_mais_10": 5.5
+        "preco_entrada_menos_05": 5.23,
+        "preco_alvo_mais_075": 5.27
     },
     {
         "symbol": "EZTC3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 46,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.66,
         "preco_atual": 12.37,
-        "preco_entrada_menos_5": 11.75,
-        "preco_alvo_mais_10": 12.93
+        "preco_entrada_menos_05": 12.31,
+        "preco_alvo_mais_075": 12.4
     },
     {
         "symbol": "FESA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 6.18,
-        "preco_entrada_menos_5": 5.87,
-        "preco_alvo_mais_10": 6.46
+        "preco_entrada_menos_05": 6.15,
+        "preco_alvo_mais_075": 6.2
     },
     {
         "symbol": "FHER3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 36,
         "total_horas_analisadas": 1246,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.89,
         "preco_atual": 3.95,
-        "preco_entrada_menos_5": 3.75,
-        "preco_alvo_mais_10": 4.13
+        "preco_entrada_menos_05": 3.93,
+        "preco_alvo_mais_075": 3.96
     },
     {
         "symbol": "FICT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 75,
         "total_horas_analisadas": 1360,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.51,
         "preco_atual": 0.23,
-        "preco_entrada_menos_5": 0.22,
-        "preco_alvo_mais_10": 0.24
+        "preco_entrada_menos_05": 0.23,
+        "preco_alvo_mais_075": 0.23
     },
     {
         "symbol": "FIQE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.62,
         "preco_atual": 6.23,
-        "preco_entrada_menos_5": 5.92,
-        "preco_alvo_mais_10": 6.51
+        "preco_entrada_menos_05": 6.2,
+        "preco_alvo_mais_075": 6.25
     },
     {
         "symbol": "FLRY3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.52,
         "preco_atual": 14.75,
-        "preco_entrada_menos_5": 14.01,
-        "preco_alvo_mais_10": 15.41
+        "preco_entrada_menos_05": 14.68,
+        "preco_alvo_mais_075": 14.79
     },
     {
         "symbol": "FRAS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.29,
         "preco_atual": 21.74,
-        "preco_entrada_menos_5": 20.65,
-        "preco_alvo_mais_10": 22.72
+        "preco_entrada_menos_05": 21.63,
+        "preco_alvo_mais_075": 21.79
     },
     {
         "symbol": "GEPA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 3,
         "total_horas_analisadas": 455,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.66,
         "preco_atual": 37.91,
-        "preco_entrada_menos_5": 36.01,
-        "preco_alvo_mais_10": 39.62
+        "preco_entrada_menos_05": 37.72,
+        "preco_alvo_mais_075": 38.0
     },
     {
         "symbol": "GFSA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 80,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.62,
         "preco_atual": 1.02,
-        "preco_entrada_menos_5": 0.97,
-        "preco_alvo_mais_10": 1.07
+        "preco_entrada_menos_05": 1.01,
+        "preco_alvo_mais_075": 1.02
     },
     {
         "symbol": "GGBR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 24,
         "total_horas_analisadas": 1719,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.4,
         "preco_atual": 20.1,
-        "preco_entrada_menos_5": 19.1,
-        "preco_alvo_mais_10": 21.0
+        "preco_entrada_menos_05": 20.0,
+        "preco_alvo_mais_075": 20.15
     },
     {
         "symbol": "GGBR4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 15,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.87,
         "preco_atual": 23.52,
-        "preco_entrada_menos_5": 22.34,
-        "preco_alvo_mais_10": 24.58
+        "preco_entrada_menos_05": 23.4,
+        "preco_alvo_mais_075": 23.58
     },
     {
         "symbol": "GGPS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 11.86,
-        "preco_entrada_menos_5": 11.27,
-        "preco_alvo_mais_10": 12.39
+        "preco_entrada_menos_05": 11.8,
+        "preco_alvo_mais_075": 11.89
     },
     {
         "symbol": "GMAT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 25,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.44,
         "preco_atual": 4.09,
-        "preco_entrada_menos_5": 3.89,
-        "preco_alvo_mais_10": 4.27
+        "preco_entrada_menos_05": 4.07,
+        "preco_alvo_mais_075": 4.1
     },
     {
         "symbol": "GOAU3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 1723,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.81,
         "preco_atual": 9.13,
-        "preco_entrada_menos_5": 8.67,
-        "preco_alvo_mais_10": 9.54
+        "preco_entrada_menos_05": 9.08,
+        "preco_alvo_mais_075": 9.15
     },
     {
         "symbol": "GOAU4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 12,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.69,
         "preco_atual": 10.15,
-        "preco_entrada_menos_5": 9.64,
-        "preco_alvo_mais_10": 10.61
+        "preco_entrada_menos_05": 10.1,
+        "preco_alvo_mais_075": 10.17
     },
     {
         "symbol": "GRND3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.75,
         "preco_atual": 3.83,
-        "preco_entrada_menos_5": 3.64,
-        "preco_alvo_mais_10": 4.0
+        "preco_entrada_menos_05": 3.81,
+        "preco_alvo_mais_075": 3.84
     },
     {
         "symbol": "HAGA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 20,
         "total_horas_analisadas": 657,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.04,
         "preco_atual": 2.39,
-        "preco_entrada_menos_5": 2.27,
-        "preco_alvo_mais_10": 2.5
+        "preco_entrada_menos_05": 2.38,
+        "preco_alvo_mais_075": 2.4
     },
     {
         "symbol": "HAGA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 50,
         "total_horas_analisadas": 866,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.77,
         "preco_atual": 1.52,
-        "preco_entrada_menos_5": 1.44,
-        "preco_alvo_mais_10": 1.59
+        "preco_entrada_menos_05": 1.51,
+        "preco_alvo_mais_075": 1.52
     },
     {
         "symbol": "HAPV3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 65,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.75,
         "preco_atual": 11.03,
-        "preco_entrada_menos_5": 10.48,
-        "preco_alvo_mais_10": 11.53
+        "preco_entrada_menos_05": 10.97,
+        "preco_alvo_mais_075": 11.06
     },
     {
         "symbol": "HBOR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 106,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 6.12,
         "preco_atual": 2.2,
-        "preco_entrada_menos_5": 2.09,
-        "preco_alvo_mais_10": 2.3
+        "preco_entrada_menos_05": 2.19,
+        "preco_alvo_mais_075": 2.21
     },
     {
         "symbol": "HBRE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 45,
         "total_horas_analisadas": 1729,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.6,
         "preco_atual": 2.59,
-        "preco_entrada_menos_5": 2.46,
-        "preco_alvo_mais_10": 2.71
+        "preco_entrada_menos_05": 2.58,
+        "preco_alvo_mais_075": 2.6
     },
     {
         "symbol": "HBSA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 57,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.29,
         "preco_atual": 2.98,
-        "preco_entrada_menos_5": 2.83,
-        "preco_alvo_mais_10": 3.11
+        "preco_entrada_menos_05": 2.97,
+        "preco_alvo_mais_075": 2.99
     },
     {
         "symbol": "HYPE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 20.98,
-        "preco_entrada_menos_5": 19.93,
-        "preco_alvo_mais_10": 21.92
+        "preco_entrada_menos_05": 20.88,
+        "preco_alvo_mais_075": 21.03
     },
     {
         "symbol": "IFCM3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 71,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.1,
         "preco_atual": 0.59,
-        "preco_entrada_menos_5": 0.56,
-        "preco_alvo_mais_10": 0.62
+        "preco_entrada_menos_05": 0.59,
+        "preco_alvo_mais_075": 0.59
     },
     {
         "symbol": "IGTI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 49,
         "total_horas_analisadas": 1618,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.03,
         "preco_atual": 3.54,
-        "preco_entrada_menos_5": 3.36,
-        "preco_alvo_mais_10": 3.7
+        "preco_entrada_menos_05": 3.52,
+        "preco_alvo_mais_075": 3.55
     },
     {
         "symbol": "IGTI4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 1,
         "total_horas_analisadas": 163,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.61,
         "preco_atual": 10.67,
-        "preco_entrada_menos_5": 10.14,
-        "preco_alvo_mais_10": 11.15
+        "preco_entrada_menos_05": 10.62,
+        "preco_alvo_mais_075": 10.7
     },
     {
         "symbol": "INEP3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 72,
         "total_horas_analisadas": 1430,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.03,
         "preco_atual": 2.07,
-        "preco_entrada_menos_5": 1.97,
-        "preco_alvo_mais_10": 2.16
+        "preco_entrada_menos_05": 2.06,
+        "preco_alvo_mais_075": 2.08
     },
     {
         "symbol": "INEP4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 86,
         "total_horas_analisadas": 1253,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 6.86,
         "preco_atual": 1.95,
-        "preco_entrada_menos_5": 1.85,
-        "preco_alvo_mais_10": 2.04
+        "preco_entrada_menos_05": 1.94,
+        "preco_alvo_mais_075": 1.95
     },
     {
         "symbol": "INTB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 24,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.39,
         "preco_atual": 13.53,
-        "preco_entrada_menos_5": 12.85,
-        "preco_alvo_mais_10": 14.14
+        "preco_entrada_menos_05": 13.46,
+        "preco_alvo_mais_075": 13.56
     },
     {
         "symbol": "IRBR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 12,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.69,
         "preco_atual": 50.9,
-        "preco_entrada_menos_5": 48.36,
-        "preco_alvo_mais_10": 53.19
+        "preco_entrada_menos_05": 50.65,
+        "preco_alvo_mais_075": 51.03
     },
     {
         "symbol": "ISAE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 2,
         "total_horas_analisadas": 1188,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.17,
         "preco_atual": 33.77,
-        "preco_entrada_menos_5": 32.08,
-        "preco_alvo_mais_10": 35.29
+        "preco_entrada_menos_05": 33.6,
+        "preco_alvo_mais_075": 33.85
     },
     {
         "symbol": "ISAE4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 26.87,
-        "preco_entrada_menos_5": 25.53,
-        "preco_alvo_mais_10": 28.08
+        "preco_entrada_menos_05": 26.74,
+        "preco_alvo_mais_075": 26.94
     },
     {
         "symbol": "ITSA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.29,
         "preco_atual": 12.79,
-        "preco_entrada_menos_5": 12.15,
-        "preco_alvo_mais_10": 13.37
+        "preco_entrada_menos_05": 12.73,
+        "preco_alvo_mais_075": 12.82
     },
     {
         "symbol": "ITSA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 7,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.4,
         "preco_atual": 12.61,
-        "preco_entrada_menos_5": 11.98,
-        "preco_alvo_mais_10": 13.18
+        "preco_entrada_menos_05": 12.55,
+        "preco_alvo_mais_075": 12.64
     },
     {
         "symbol": "ITUB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 6,
         "total_horas_analisadas": 1733,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.35,
         "preco_atual": 40.62,
-        "preco_entrada_menos_5": 38.59,
-        "preco_alvo_mais_10": 42.45
+        "preco_entrada_menos_05": 40.42,
+        "preco_alvo_mais_075": 40.72
     },
     {
         "symbol": "ITUB4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 1733,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.29,
         "preco_atual": 39.04,
-        "preco_entrada_menos_5": 37.09,
-        "preco_alvo_mais_10": 40.8
+        "preco_entrada_menos_05": 38.84,
+        "preco_alvo_mais_075": 39.14
     },
     {
         "symbol": "JALL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 45,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.6,
         "preco_atual": 2.45,
-        "preco_entrada_menos_5": 2.33,
-        "preco_alvo_mais_10": 2.56
+        "preco_entrada_menos_05": 2.44,
+        "preco_alvo_mais_075": 2.46
     },
     {
         "symbol": "JFEN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 34,
         "total_horas_analisadas": 996,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.41,
         "preco_atual": 0.57,
-        "preco_entrada_menos_5": 0.54,
-        "preco_alvo_mais_10": 0.6
+        "preco_entrada_menos_05": 0.57,
+        "preco_alvo_mais_075": 0.57
     },
     {
         "symbol": "JHSF3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.62,
         "preco_atual": 11.26,
-        "preco_entrada_menos_5": 10.7,
-        "preco_alvo_mais_10": 11.77
+        "preco_entrada_menos_05": 11.2,
+        "preco_alvo_mais_075": 11.29
     },
     {
         "symbol": "JSLG3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 71,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.1,
         "preco_atual": 6.0,
-        "preco_entrada_menos_5": 5.7,
-        "preco_alvo_mais_10": 6.27
+        "preco_entrada_menos_05": 5.97,
+        "preco_alvo_mais_075": 6.01
     },
     {
         "symbol": "KEPL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.62,
         "preco_atual": 6.31,
-        "preco_entrada_menos_5": 5.99,
-        "preco_alvo_mais_10": 6.59
+        "preco_entrada_menos_05": 6.28,
+        "preco_alvo_mais_075": 6.33
     },
     {
         "symbol": "KLBN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 19,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.1,
         "preco_atual": 3.43,
-        "preco_entrada_menos_5": 3.26,
-        "preco_alvo_mais_10": 3.58
+        "preco_entrada_menos_05": 3.41,
+        "preco_alvo_mais_075": 3.44
     },
     {
         "symbol": "KLBN4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 18,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.04,
         "preco_atual": 3.42,
-        "preco_entrada_menos_5": 3.25,
-        "preco_alvo_mais_10": 3.57
+        "preco_entrada_menos_05": 3.4,
+        "preco_alvo_mais_075": 3.43
     },
     {
         "symbol": "LAND3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 25,
         "total_horas_analisadas": 1719,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.45,
         "preco_atual": 8.01,
-        "preco_entrada_menos_5": 7.61,
-        "preco_alvo_mais_10": 8.37
+        "preco_entrada_menos_05": 7.97,
+        "preco_alvo_mais_075": 8.03
     },
     {
         "symbol": "LAVV3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 15,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.87,
         "preco_atual": 10.69,
-        "preco_entrada_menos_5": 10.16,
-        "preco_alvo_mais_10": 11.17
+        "preco_entrada_menos_05": 10.64,
+        "preco_alvo_mais_075": 10.72
     },
     {
         "symbol": "LEVE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 11,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.64,
         "preco_atual": 32.35,
-        "preco_entrada_menos_5": 30.73,
-        "preco_alvo_mais_10": 33.81
+        "preco_entrada_menos_05": 32.19,
+        "preco_alvo_mais_075": 32.43
     },
     {
         "symbol": "LIGT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 86,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.97,
         "preco_atual": 2.8,
-        "preco_entrada_menos_5": 2.66,
-        "preco_alvo_mais_10": 2.93
+        "preco_entrada_menos_05": 2.79,
+        "preco_alvo_mais_075": 2.81
     },
     {
         "symbol": "LJQQ3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 87,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.02,
         "preco_atual": 1.32,
-        "preco_entrada_menos_5": 1.25,
-        "preco_alvo_mais_10": 1.38
+        "preco_entrada_menos_05": 1.31,
+        "preco_alvo_mais_075": 1.32
     },
     {
         "symbol": "LOGG3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.75,
         "preco_atual": 30.9,
-        "preco_entrada_menos_5": 29.35,
-        "preco_alvo_mais_10": 32.29
+        "preco_entrada_menos_05": 30.75,
+        "preco_alvo_mais_075": 30.98
     },
     {
         "symbol": "LOGN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 18,
         "total_horas_analisadas": 1405,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.28,
         "preco_atual": 27.73,
-        "preco_entrada_menos_5": 26.34,
-        "preco_alvo_mais_10": 28.98
+        "preco_entrada_menos_05": 27.59,
+        "preco_alvo_mais_075": 27.8
     },
     {
         "symbol": "LPSB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 138,
         "total_horas_analisadas": 1729,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 7.98,
         "preco_atual": 1.49,
-        "preco_entrada_menos_5": 1.42,
-        "preco_alvo_mais_10": 1.56
+        "preco_entrada_menos_05": 1.48,
+        "preco_alvo_mais_075": 1.49
     },
     {
         "symbol": "LREN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 33,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.91,
         "preco_atual": 14.94,
-        "preco_entrada_menos_5": 14.19,
-        "preco_alvo_mais_10": 15.61
+        "preco_entrada_menos_05": 14.87,
+        "preco_alvo_mais_075": 14.98
     },
     {
         "symbol": "LUPA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 58,
         "total_horas_analisadas": 1569,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.7,
         "preco_atual": 0.78,
-        "preco_entrada_menos_5": 0.74,
-        "preco_alvo_mais_10": 0.82
+        "preco_entrada_menos_05": 0.78,
+        "preco_alvo_mais_075": 0.78
     },
     {
         "symbol": "LUXM4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 35,
         "total_horas_analisadas": 785,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.46,
         "preco_atual": 3.17,
-        "preco_entrada_menos_5": 3.01,
-        "preco_alvo_mais_10": 3.31
+        "preco_entrada_menos_05": 3.15,
+        "preco_alvo_mais_075": 3.18
     },
     {
         "symbol": "LWSA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 57,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.29,
         "preco_atual": 3.64,
-        "preco_entrada_menos_5": 3.46,
-        "preco_alvo_mais_10": 3.8
+        "preco_entrada_menos_05": 3.62,
+        "preco_alvo_mais_075": 3.65
     },
     {
         "symbol": "MATD3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1727,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.62,
         "preco_atual": 4.83,
-        "preco_entrada_menos_5": 4.59,
-        "preco_alvo_mais_10": 5.05
+        "preco_entrada_menos_05": 4.81,
+        "preco_alvo_mais_075": 4.84
     },
     {
         "symbol": "MBRF3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 46,
         "total_horas_analisadas": 1199,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.84,
         "preco_atual": 15.69,
-        "preco_entrada_menos_5": 14.91,
-        "preco_alvo_mais_10": 16.4
+        "preco_entrada_menos_05": 15.61,
+        "preco_alvo_mais_075": 15.73
     },
     {
         "symbol": "MDIA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.52,
         "preco_atual": 19.01,
-        "preco_entrada_menos_5": 18.06,
-        "preco_alvo_mais_10": 19.87
+        "preco_entrada_menos_05": 18.91,
+        "preco_alvo_mais_075": 19.06
     },
     {
         "symbol": "MDNE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 50,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.89,
         "preco_atual": 26.22,
-        "preco_entrada_menos_5": 24.91,
-        "preco_alvo_mais_10": 27.4
+        "preco_entrada_menos_05": 26.09,
+        "preco_alvo_mais_075": 26.28
     },
     {
         "symbol": "MEAL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 90,
         "total_horas_analisadas": 1708,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.27,
         "preco_atual": 0.96,
-        "preco_entrada_menos_5": 0.91,
-        "preco_alvo_mais_10": 1.0
+        "preco_entrada_menos_05": 0.96,
+        "preco_alvo_mais_075": 0.96
     },
     {
         "symbol": "MELK3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 21,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.21,
         "preco_atual": 3.18,
-        "preco_entrada_menos_5": 3.02,
-        "preco_alvo_mais_10": 3.32
+        "preco_entrada_menos_05": 3.16,
+        "preco_alvo_mais_075": 3.19
     },
     {
         "symbol": "MGEL4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 641,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.25,
         "preco_atual": 5.14,
-        "preco_entrada_menos_5": 4.88,
-        "preco_alvo_mais_10": 5.37
+        "preco_entrada_menos_05": 5.11,
+        "preco_alvo_mais_075": 5.15
     },
     {
         "symbol": "MGLU3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 58,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.35,
         "preco_atual": 5.44,
-        "preco_entrada_menos_5": 5.17,
-        "preco_alvo_mais_10": 5.68
+        "preco_entrada_menos_05": 5.41,
+        "preco_alvo_mais_075": 5.45
     },
     {
         "symbol": "MILS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.29,
         "preco_atual": 15.22,
-        "preco_entrada_menos_5": 14.46,
-        "preco_alvo_mais_10": 15.9
+        "preco_entrada_menos_05": 15.14,
+        "preco_alvo_mais_075": 15.26
     },
     {
         "symbol": "MLAS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 173,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 9.99,
         "preco_atual": 1.56,
-        "preco_entrada_menos_5": 1.48,
-        "preco_alvo_mais_10": 1.63
+        "preco_entrada_menos_05": 1.55,
+        "preco_alvo_mais_075": 1.56
     },
     {
         "symbol": "MNPR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 67,
         "total_horas_analisadas": 1212,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.53,
         "preco_atual": 4.0,
-        "preco_entrada_menos_5": 3.8,
-        "preco_alvo_mais_10": 4.18
+        "preco_entrada_menos_05": 3.98,
+        "preco_alvo_mais_075": 4.01
     },
     {
         "symbol": "MOTV3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 18,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.04,
         "preco_atual": 13.94,
-        "preco_entrada_menos_5": 13.24,
-        "preco_alvo_mais_10": 14.57
+        "preco_entrada_menos_05": 13.87,
+        "preco_alvo_mais_075": 13.97
     },
     {
         "symbol": "MOVI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 107,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 6.18,
         "preco_atual": 9.28,
-        "preco_entrada_menos_5": 8.82,
-        "preco_alvo_mais_10": 9.7
+        "preco_entrada_menos_05": 9.23,
+        "preco_alvo_mais_075": 9.3
     },
     {
         "symbol": "MRVE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 50,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.89,
         "preco_atual": 5.59,
-        "preco_entrada_menos_5": 5.31,
-        "preco_alvo_mais_10": 5.84
+        "preco_entrada_menos_05": 5.56,
+        "preco_alvo_mais_075": 5.6
     },
     {
         "symbol": "MSPA3.SA",
@@ -1719,1079 +1719,1079 @@
         "total_horas_analisadas": 13,
         "porcentagem_acerto": 0.0,
         "preco_atual": 44.65,
-        "preco_entrada_menos_5": 42.42,
-        "preco_alvo_mais_10": 46.66
+        "preco_entrada_menos_05": 44.43,
+        "preco_alvo_mais_075": 44.76
     },
     {
         "symbol": "MTRE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 19,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.1,
         "preco_atual": 3.45,
-        "preco_entrada_menos_5": 3.28,
-        "preco_alvo_mais_10": 3.61
+        "preco_entrada_menos_05": 3.43,
+        "preco_alvo_mais_075": 3.46
     },
     {
         "symbol": "MTSA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 6,
         "total_horas_analisadas": 649,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.92,
         "preco_atual": 43.0,
-        "preco_entrada_menos_5": 40.85,
-        "preco_alvo_mais_10": 44.94
+        "preco_entrada_menos_05": 42.78,
+        "preco_alvo_mais_075": 43.11
     },
     {
         "symbol": "MULT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.81,
         "preco_atual": 28.36,
-        "preco_entrada_menos_5": 26.94,
-        "preco_alvo_mais_10": 29.64
+        "preco_entrada_menos_05": 28.22,
+        "preco_alvo_mais_075": 28.43
     },
     {
         "symbol": "MYPK3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.81,
         "preco_atual": 8.96,
-        "preco_entrada_menos_5": 8.51,
-        "preco_alvo_mais_10": 9.36
+        "preco_entrada_menos_05": 8.92,
+        "preco_alvo_mais_075": 8.98
     },
     {
         "symbol": "NATU3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 45,
         "total_horas_analisadas": 1613,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.79,
         "preco_atual": 9.71,
-        "preco_entrada_menos_5": 9.22,
-        "preco_alvo_mais_10": 10.15
+        "preco_entrada_menos_05": 9.66,
+        "preco_alvo_mais_075": 9.73
     },
     {
         "symbol": "NEXP3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 1,
         "total_horas_analisadas": 357,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.28,
         "preco_atual": 2.47,
-        "preco_entrada_menos_5": 2.35,
-        "preco_alvo_mais_10": 2.58
+        "preco_entrada_menos_05": 2.46,
+        "preco_alvo_mais_075": 2.48
     },
     {
         "symbol": "NGRD3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 1438,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.97,
         "preco_atual": 33.93,
-        "preco_entrada_menos_5": 32.23,
-        "preco_alvo_mais_10": 35.46
+        "preco_entrada_menos_05": 33.76,
+        "preco_alvo_mais_075": 34.01
     },
     {
         "symbol": "NORD3.SA",
-        "padrao_atingido_vezes": 1,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 244,
-        "porcentagem_acerto": 0.41,
+        "porcentagem_acerto": 2.05,
         "preco_atual": 1.84,
-        "preco_entrada_menos_5": 1.75,
-        "preco_alvo_mais_10": 1.92
+        "preco_entrada_menos_05": 1.83,
+        "preco_alvo_mais_075": 1.84
     },
     {
         "symbol": "NUTR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1593,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.44,
         "preco_atual": 2.19,
-        "preco_entrada_menos_5": 2.08,
-        "preco_alvo_mais_10": 2.29
+        "preco_entrada_menos_05": 2.18,
+        "preco_alvo_mais_075": 2.2
     },
     {
         "symbol": "OBTC3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 30,
         "total_horas_analisadas": 822,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.65,
         "preco_atual": 5.93,
-        "preco_entrada_menos_5": 5.63,
-        "preco_alvo_mais_10": 6.2
+        "preco_entrada_menos_05": 5.9,
+        "preco_alvo_mais_075": 5.94
     },
     {
         "symbol": "OFSA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 816,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.49,
         "preco_atual": 29.99,
-        "preco_entrada_menos_5": 28.49,
-        "preco_alvo_mais_10": 31.34
+        "preco_entrada_menos_05": 29.84,
+        "preco_alvo_mais_075": 30.06
     },
     {
         "symbol": "OIBR3.SA",
-        "padrao_atingido_vezes": 1,
+        "padrao_atingido_vezes": 29,
         "total_horas_analisadas": 1024,
-        "porcentagem_acerto": 0.1,
+        "porcentagem_acerto": 2.83,
         "preco_atual": 0.13,
-        "preco_entrada_menos_5": 0.12,
-        "preco_alvo_mais_10": 0.14
+        "preco_entrada_menos_05": 0.13,
+        "preco_alvo_mais_075": 0.13
     },
     {
         "symbol": "OIBR4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 41,
         "total_horas_analisadas": 884,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.64,
         "preco_atual": 1.85,
-        "preco_entrada_menos_5": 1.76,
-        "preco_alvo_mais_10": 1.93
+        "preco_entrada_menos_05": 1.84,
+        "preco_alvo_mais_075": 1.85
     },
     {
         "symbol": "ONCO3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 184,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 10.62,
         "preco_atual": 1.27,
-        "preco_entrada_menos_5": 1.21,
-        "preco_alvo_mais_10": 1.33
+        "preco_entrada_menos_05": 1.26,
+        "preco_alvo_mais_075": 1.27
     },
     {
         "symbol": "OPCT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 10.2,
-        "preco_entrada_menos_5": 9.69,
-        "preco_alvo_mais_10": 10.66
+        "preco_entrada_menos_05": 10.15,
+        "preco_alvo_mais_075": 10.23
     },
     {
         "symbol": "ORVR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.75,
         "preco_atual": 77.9,
-        "preco_entrada_menos_5": 74.01,
-        "preco_alvo_mais_10": 81.41
+        "preco_entrada_menos_05": 77.51,
+        "preco_alvo_mais_075": 78.09
     },
     {
         "symbol": "OSXB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 1,
         "total_horas_analisadas": 274,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.36,
         "preco_atual": 2.15,
-        "preco_entrada_menos_5": 2.04,
-        "preco_alvo_mais_10": 2.25
+        "preco_entrada_menos_05": 2.14,
+        "preco_alvo_mais_075": 2.16
     },
     {
         "symbol": "PASS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 2,
         "total_horas_analisadas": 133,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.5,
         "preco_atual": 26.0,
-        "preco_entrada_menos_5": 24.7,
-        "preco_alvo_mais_10": 27.17
+        "preco_entrada_menos_05": 25.87,
+        "preco_alvo_mais_075": 26.06
     },
     {
         "symbol": "PATI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 1,
         "total_horas_analisadas": 185,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.54,
         "preco_atual": 31.8,
-        "preco_entrada_menos_5": 30.21,
-        "preco_alvo_mais_10": 33.23
+        "preco_entrada_menos_05": 31.64,
+        "preco_alvo_mais_075": 31.88
     },
     {
         "symbol": "PCAR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 110,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 6.35,
         "preco_atual": 1.68,
-        "preco_entrada_menos_5": 1.6,
-        "preco_alvo_mais_10": 1.76
+        "preco_entrada_menos_05": 1.67,
+        "preco_alvo_mais_075": 1.68
     },
     {
         "symbol": "PDGR3.SA",
-        "padrao_atingido_vezes": 1,
+        "padrao_atingido_vezes": 63,
         "total_horas_analisadas": 1660,
-        "porcentagem_acerto": 0.06,
+        "porcentagem_acerto": 3.8,
         "preco_atual": 1.44,
-        "preco_entrada_menos_5": 1.37,
-        "preco_alvo_mais_10": 1.5
+        "preco_entrada_menos_05": 1.43,
+        "preco_alvo_mais_075": 1.44
     },
     {
         "symbol": "PDTC3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 96,
         "total_horas_analisadas": 1501,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 6.4,
         "preco_atual": 1.35,
-        "preco_entrada_menos_5": 1.28,
-        "preco_alvo_mais_10": 1.41
+        "preco_entrada_menos_05": 1.34,
+        "preco_alvo_mais_075": 1.35
     },
     {
         "symbol": "PETR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.75,
         "preco_atual": 45.74,
-        "preco_entrada_menos_5": 43.45,
-        "preco_alvo_mais_10": 47.8
+        "preco_entrada_menos_05": 45.51,
+        "preco_alvo_mais_075": 45.85
     },
     {
         "symbol": "PETR4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.52,
         "preco_atual": 40.84,
-        "preco_entrada_menos_5": 38.8,
-        "preco_alvo_mais_10": 42.68
+        "preco_entrada_menos_05": 40.64,
+        "preco_alvo_mais_075": 40.94
     },
     {
         "symbol": "PFRM3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 38,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.19,
         "preco_atual": 6.62,
-        "preco_entrada_menos_5": 6.29,
-        "preco_alvo_mais_10": 6.92
+        "preco_entrada_menos_05": 6.59,
+        "preco_alvo_mais_075": 6.64
     },
     {
         "symbol": "PGMN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 68,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.93,
         "preco_atual": 3.94,
-        "preco_entrada_menos_5": 3.74,
-        "preco_alvo_mais_10": 4.12
+        "preco_entrada_menos_05": 3.92,
+        "preco_alvo_mais_075": 3.95
     },
     {
         "symbol": "PINE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1087,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.2,
         "preco_atual": 12.28,
-        "preco_entrada_menos_5": 11.67,
-        "preco_alvo_mais_10": 12.83
+        "preco_entrada_menos_05": 12.22,
+        "preco_alvo_mais_075": 12.31
     },
     {
         "symbol": "PINE4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 61,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.52,
         "preco_atual": 12.58,
-        "preco_entrada_menos_5": 11.95,
-        "preco_alvo_mais_10": 13.15
+        "preco_entrada_menos_05": 12.52,
+        "preco_alvo_mais_075": 12.61
     },
     {
         "symbol": "PLPL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 64,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.7,
         "preco_atual": 8.5,
-        "preco_entrada_menos_5": 8.07,
-        "preco_alvo_mais_10": 8.88
+        "preco_entrada_menos_05": 8.46,
+        "preco_alvo_mais_075": 8.52
     },
     {
         "symbol": "PMAM3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 141,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 8.15,
         "preco_atual": 0.31,
-        "preco_entrada_menos_5": 0.29,
-        "preco_alvo_mais_10": 0.32
+        "preco_entrada_menos_05": 0.31,
+        "preco_alvo_mais_075": 0.31
     },
     {
         "symbol": "PNVL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 27,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.56,
         "preco_atual": 10.55,
-        "preco_entrada_menos_5": 10.02,
-        "preco_alvo_mais_10": 11.02
+        "preco_entrada_menos_05": 10.5,
+        "preco_alvo_mais_075": 10.58
     },
     {
         "symbol": "POMO3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 21,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.21,
         "preco_atual": 5.64,
-        "preco_entrada_menos_5": 5.36,
-        "preco_alvo_mais_10": 5.89
+        "preco_entrada_menos_05": 5.61,
+        "preco_alvo_mais_075": 5.65
     },
     {
         "symbol": "POMO4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 22,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.27,
         "preco_atual": 5.63,
-        "preco_entrada_menos_5": 5.35,
-        "preco_alvo_mais_10": 5.88
+        "preco_entrada_menos_05": 5.6,
+        "preco_alvo_mais_075": 5.64
     },
     {
         "symbol": "POSI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 27,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.56,
         "preco_atual": 3.68,
-        "preco_entrada_menos_5": 3.5,
-        "preco_alvo_mais_10": 3.85
+        "preco_entrada_menos_05": 3.66,
+        "preco_alvo_mais_075": 3.69
     },
     {
         "symbol": "PRIO3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 17,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.98,
         "preco_atual": 61.25,
-        "preco_entrada_menos_5": 58.19,
-        "preco_alvo_mais_10": 64.01
+        "preco_entrada_menos_05": 60.94,
+        "preco_alvo_mais_075": 61.4
     },
     {
         "symbol": "PRNR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 16,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.92,
         "preco_atual": 17.69,
-        "preco_entrada_menos_5": 16.81,
-        "preco_alvo_mais_10": 18.49
+        "preco_entrada_menos_05": 17.6,
+        "preco_alvo_mais_075": 17.73
     },
     {
         "symbol": "PSSA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 15,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.87,
         "preco_atual": 48.04,
-        "preco_entrada_menos_5": 45.64,
-        "preco_alvo_mais_10": 50.2
+        "preco_entrada_menos_05": 47.8,
+        "preco_alvo_mais_075": 48.16
     },
     {
         "symbol": "PTBL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 47,
         "total_horas_analisadas": 1727,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.72,
         "preco_atual": 1.77,
-        "preco_entrada_menos_5": 1.68,
-        "preco_alvo_mais_10": 1.85
+        "preco_entrada_menos_05": 1.76,
+        "preco_alvo_mais_075": 1.77
     },
     {
         "symbol": "QUAL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 99,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 5.72,
         "preco_atual": 1.54,
-        "preco_entrada_menos_5": 1.46,
-        "preco_alvo_mais_10": 1.61
+        "preco_entrada_menos_05": 1.53,
+        "preco_alvo_mais_075": 1.54
     },
     {
         "symbol": "RADL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 39,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.25,
         "preco_atual": 17.57,
-        "preco_entrada_menos_5": 16.69,
-        "preco_alvo_mais_10": 18.36
+        "preco_entrada_menos_05": 17.48,
+        "preco_alvo_mais_075": 17.61
     },
     {
         "symbol": "RAIL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 32,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.85,
         "preco_atual": 13.93,
-        "preco_entrada_menos_5": 13.23,
-        "preco_alvo_mais_10": 14.56
+        "preco_entrada_menos_05": 13.86,
+        "preco_alvo_mais_075": 13.96
     },
     {
         "symbol": "RAIZ4.SA",
-        "padrao_atingido_vezes": 1,
+        "padrao_atingido_vezes": 127,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.06,
+        "porcentagem_acerto": 7.33,
         "preco_atual": 0.39,
-        "preco_entrada_menos_5": 0.37,
-        "preco_alvo_mais_10": 0.41
+        "preco_entrada_menos_05": 0.39,
+        "preco_alvo_mais_075": 0.39
     },
     {
         "symbol": "RANI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.52,
         "preco_atual": 7.86,
-        "preco_entrada_menos_5": 7.47,
-        "preco_alvo_mais_10": 8.21
+        "preco_entrada_menos_05": 7.82,
+        "preco_alvo_mais_075": 7.88
     },
     {
         "symbol": "RAPT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 25,
         "total_horas_analisadas": 1496,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.67,
         "preco_atual": 5.02,
-        "preco_entrada_menos_5": 4.77,
-        "preco_alvo_mais_10": 5.25
+        "preco_entrada_menos_05": 4.99,
+        "preco_alvo_mais_075": 5.03
     },
     {
         "symbol": "RAPT4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 29,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.67,
         "preco_atual": 4.98,
-        "preco_entrada_menos_5": 4.73,
-        "preco_alvo_mais_10": 5.2
+        "preco_entrada_menos_05": 4.96,
+        "preco_alvo_mais_075": 4.99
     },
     {
         "symbol": "RCSL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 123,
         "total_horas_analisadas": 1681,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 7.32,
         "preco_atual": 0.37,
-        "preco_entrada_menos_5": 0.35,
-        "preco_alvo_mais_10": 0.39
+        "preco_entrada_menos_05": 0.37,
+        "preco_alvo_mais_075": 0.37
     },
     {
         "symbol": "RCSL4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 227,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 13.11,
         "preco_atual": 0.5,
-        "preco_entrada_menos_5": 0.47,
-        "preco_alvo_mais_10": 0.52
+        "preco_entrada_menos_05": 0.5,
+        "preco_alvo_mais_075": 0.5
     },
     {
         "symbol": "RDOR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 17,
         "total_horas_analisadas": 1731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.98,
         "preco_atual": 32.84,
-        "preco_entrada_menos_5": 31.2,
-        "preco_alvo_mais_10": 34.32
+        "preco_entrada_menos_05": 32.68,
+        "preco_alvo_mais_075": 32.92
     },
     {
         "symbol": "RECV3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.62,
         "preco_atual": 10.73,
-        "preco_entrada_menos_5": 10.19,
-        "preco_alvo_mais_10": 11.21
+        "preco_entrada_menos_05": 10.68,
+        "preco_alvo_mais_075": 10.76
     },
     {
         "symbol": "REDE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 5,
         "total_horas_analisadas": 818,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.61,
         "preco_atual": 5.97,
-        "preco_entrada_menos_5": 5.67,
-        "preco_alvo_mais_10": 6.24
+        "preco_entrada_menos_05": 5.94,
+        "preco_alvo_mais_075": 5.98
     },
     {
         "symbol": "RENT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 39,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.25,
         "preco_atual": 40.31,
-        "preco_entrada_menos_5": 38.29,
-        "preco_alvo_mais_10": 42.12
+        "preco_entrada_menos_05": 40.11,
+        "preco_alvo_mais_075": 40.41
     },
     {
         "symbol": "RENT4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 15,
         "total_horas_analisadas": 731,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.05,
         "preco_atual": 38.84,
-        "preco_entrada_menos_5": 36.9,
-        "preco_alvo_mais_10": 40.59
+        "preco_entrada_menos_05": 38.65,
+        "preco_alvo_mais_075": 38.94
     },
     {
         "symbol": "RIAA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 565,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.3,
         "preco_atual": 8.44,
-        "preco_entrada_menos_5": 8.02,
-        "preco_alvo_mais_10": 8.82
+        "preco_entrada_menos_05": 8.4,
+        "preco_alvo_mais_075": 8.46
     },
     {
         "symbol": "RNEW3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 159,
         "total_horas_analisadas": 1568,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 10.14,
         "preco_atual": 0.92,
-        "preco_entrada_menos_5": 0.87,
-        "preco_alvo_mais_10": 0.96
+        "preco_entrada_menos_05": 0.92,
+        "preco_alvo_mais_075": 0.92
     },
     {
         "symbol": "RNEW4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 159,
         "total_horas_analisadas": 1668,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 9.53,
         "preco_atual": 0.91,
-        "preco_entrada_menos_5": 0.86,
-        "preco_alvo_mais_10": 0.95
+        "preco_entrada_menos_05": 0.91,
+        "preco_alvo_mais_075": 0.91
     },
     {
         "symbol": "ROMI3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 7,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.4,
         "preco_atual": 6.4,
-        "preco_entrada_menos_5": 6.08,
-        "preco_alvo_mais_10": 6.69
+        "preco_entrada_menos_05": 6.37,
+        "preco_alvo_mais_075": 6.42
     },
     {
         "symbol": "RPMG3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 7,
         "total_horas_analisadas": 739,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.95,
         "preco_atual": 1.41,
-        "preco_entrada_menos_5": 1.34,
-        "preco_alvo_mais_10": 1.47
+        "preco_entrada_menos_05": 1.4,
+        "preco_alvo_mais_075": 1.41
     },
     {
         "symbol": "RSUL4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 6,
         "total_horas_analisadas": 646,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.93,
         "preco_atual": 63.21,
-        "preco_entrada_menos_5": 60.05,
-        "preco_alvo_mais_10": 66.05
+        "preco_entrada_menos_05": 62.89,
+        "preco_alvo_mais_075": 63.37
     },
     {
         "symbol": "RVEE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 1,
         "total_horas_analisadas": 400,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.25,
         "preco_atual": 1.08,
-        "preco_entrada_menos_5": 1.03,
-        "preco_alvo_mais_10": 1.13
+        "preco_entrada_menos_05": 1.07,
+        "preco_alvo_mais_075": 1.08
     },
     {
         "symbol": "SANB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 11,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.64,
         "preco_atual": 12.99,
-        "preco_entrada_menos_5": 12.34,
-        "preco_alvo_mais_10": 13.57
+        "preco_entrada_menos_05": 12.93,
+        "preco_alvo_mais_075": 13.02
     },
     {
         "symbol": "SANB4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 13.95,
-        "preco_entrada_menos_5": 13.25,
-        "preco_alvo_mais_10": 14.58
+        "preco_entrada_menos_05": 13.88,
+        "preco_alvo_mais_075": 13.98
     },
     {
         "symbol": "SAPR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 37,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.14,
         "preco_atual": 8.07,
-        "preco_entrada_menos_5": 7.67,
-        "preco_alvo_mais_10": 8.43
+        "preco_entrada_menos_05": 8.03,
+        "preco_alvo_mais_075": 8.09
     },
     {
         "symbol": "SAPR4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 17,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.98,
         "preco_atual": 7.18,
-        "preco_entrada_menos_5": 6.82,
-        "preco_alvo_mais_10": 7.5
+        "preco_entrada_menos_05": 7.14,
+        "preco_alvo_mais_075": 7.2
     },
     {
         "symbol": "SAUD3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 1,
         "total_horas_analisadas": 161,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.62,
         "preco_atual": 12.59,
-        "preco_entrada_menos_5": 11.96,
-        "preco_alvo_mais_10": 13.16
+        "preco_entrada_menos_05": 12.53,
+        "preco_alvo_mais_075": 12.62
     },
     {
         "symbol": "SBFG3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 45,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.6,
         "preco_atual": 10.47,
-        "preco_entrada_menos_5": 9.95,
-        "preco_alvo_mais_10": 10.94
+        "preco_entrada_menos_05": 10.42,
+        "preco_alvo_mais_075": 10.5
     },
     {
         "symbol": "SBSP3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.81,
         "preco_atual": 27.38,
-        "preco_entrada_menos_5": 26.01,
-        "preco_alvo_mais_10": 28.61
+        "preco_entrada_menos_05": 27.24,
+        "preco_alvo_mais_075": 27.45
     },
     {
         "symbol": "SCAR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 17,
         "total_horas_analisadas": 1529,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.11,
         "preco_atual": 12.67,
-        "preco_entrada_menos_5": 12.04,
-        "preco_alvo_mais_10": 13.24
+        "preco_entrada_menos_05": 12.61,
+        "preco_alvo_mais_075": 12.7
     },
     {
         "symbol": "SEER3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 69,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.98,
         "preco_atual": 11.02,
-        "preco_entrada_menos_5": 10.47,
-        "preco_alvo_mais_10": 11.52
+        "preco_entrada_menos_05": 10.96,
+        "preco_alvo_mais_075": 11.05
     },
     {
         "symbol": "SEQL3.SA",
-        "padrao_atingido_vezes": 1,
+        "padrao_atingido_vezes": 104,
         "total_horas_analisadas": 1717,
-        "porcentagem_acerto": 0.06,
+        "porcentagem_acerto": 6.06,
         "preco_atual": 0.08,
-        "preco_entrada_menos_5": 0.08,
-        "preco_alvo_mais_10": 0.08
+        "preco_entrada_menos_05": 0.08,
+        "preco_alvo_mais_075": 0.08
     },
     {
         "symbol": "SHOW3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 48,
         "total_horas_analisadas": 1720,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.79,
         "preco_atual": 5.72,
-        "preco_entrada_menos_5": 5.43,
-        "preco_alvo_mais_10": 5.98
+        "preco_entrada_menos_05": 5.69,
+        "preco_alvo_mais_075": 5.73
     },
     {
         "symbol": "SHUL4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 4.8,
-        "preco_entrada_menos_5": 4.56,
-        "preco_alvo_mais_10": 5.02
+        "preco_entrada_menos_05": 4.78,
+        "preco_alvo_mais_075": 4.81
     },
     {
         "symbol": "SIMH3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 75,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.33,
         "preco_atual": 8.51,
-        "preco_entrada_menos_5": 8.08,
-        "preco_alvo_mais_10": 8.89
+        "preco_entrada_menos_05": 8.47,
+        "preco_alvo_mais_075": 8.53
     },
     {
         "symbol": "SLCE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 12,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.69,
         "preco_atual": 14.78,
-        "preco_entrada_menos_5": 14.04,
-        "preco_alvo_mais_10": 15.45
+        "preco_entrada_menos_05": 14.71,
+        "preco_alvo_mais_075": 14.82
     },
     {
         "symbol": "SMFT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 36,
         "total_horas_analisadas": 1730,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.08,
         "preco_atual": 18.51,
-        "preco_entrada_menos_5": 17.58,
-        "preco_alvo_mais_10": 19.34
+        "preco_entrada_menos_05": 18.42,
+        "preco_alvo_mais_075": 18.56
     },
     {
         "symbol": "SMTO3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 39,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.25,
         "preco_atual": 16.95,
-        "preco_entrada_menos_5": 16.1,
-        "preco_alvo_mais_10": 17.71
+        "preco_entrada_menos_05": 16.87,
+        "preco_alvo_mais_075": 16.99
     },
     {
         "symbol": "SOJA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 13,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.75,
         "preco_atual": 6.11,
-        "preco_entrada_menos_5": 5.8,
-        "preco_alvo_mais_10": 6.38
+        "preco_entrada_menos_05": 6.08,
+        "preco_alvo_mais_075": 6.13
     },
     {
         "symbol": "SUZB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.52,
         "preco_atual": 41.88,
-        "preco_entrada_menos_5": 39.79,
-        "preco_alvo_mais_10": 43.76
+        "preco_entrada_menos_05": 41.67,
+        "preco_alvo_mais_075": 41.98
     },
     {
         "symbol": "SYNE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 25,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.44,
         "preco_atual": 3.55,
-        "preco_entrada_menos_5": 3.37,
-        "preco_alvo_mais_10": 3.71
+        "preco_entrada_menos_05": 3.53,
+        "preco_alvo_mais_075": 3.56
     },
     {
         "symbol": "TAEE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 6,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.35,
         "preco_atual": 12.84,
-        "preco_entrada_menos_5": 12.2,
-        "preco_alvo_mais_10": 13.42
+        "preco_entrada_menos_05": 12.78,
+        "preco_alvo_mais_075": 12.87
     },
     {
         "symbol": "TAEE4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 2,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.12,
         "preco_atual": 12.98,
-        "preco_entrada_menos_5": 12.33,
-        "preco_alvo_mais_10": 13.56
+        "preco_entrada_menos_05": 12.92,
+        "preco_alvo_mais_075": 13.01
     },
     {
         "symbol": "TASA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 36,
         "total_horas_analisadas": 1656,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.17,
         "preco_atual": 4.96,
-        "preco_entrada_menos_5": 4.71,
-        "preco_alvo_mais_10": 5.18
+        "preco_entrada_menos_05": 4.94,
+        "preco_alvo_mais_075": 4.97
     },
     {
         "symbol": "TASA4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 28,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.62,
         "preco_atual": 4.27,
-        "preco_entrada_menos_5": 4.06,
-        "preco_alvo_mais_10": 4.46
+        "preco_entrada_menos_05": 4.25,
+        "preco_alvo_mais_075": 4.28
     },
     {
         "symbol": "TCSA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 134,
         "total_horas_analisadas": 1729,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 7.75,
         "preco_atual": 1.09,
-        "preco_entrada_menos_5": 1.04,
-        "preco_alvo_mais_10": 1.14
+        "preco_entrada_menos_05": 1.08,
+        "preco_alvo_mais_075": 1.09
     },
     {
         "symbol": "TECN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 34,
         "total_horas_analisadas": 1639,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.07,
         "preco_atual": 8.85,
-        "preco_entrada_menos_5": 8.41,
-        "preco_alvo_mais_10": 9.25
+        "preco_entrada_menos_05": 8.81,
+        "preco_alvo_mais_075": 8.87
     },
     {
         "symbol": "TELB3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 7,
         "total_horas_analisadas": 481,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.46,
         "preco_atual": 11.99,
-        "preco_entrada_menos_5": 11.39,
-        "preco_alvo_mais_10": 12.53
+        "preco_entrada_menos_05": 11.93,
+        "preco_alvo_mais_075": 12.02
     },
     {
         "symbol": "TELB4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 12,
         "total_horas_analisadas": 729,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.65,
         "preco_atual": 8.08,
-        "preco_entrada_menos_5": 7.68,
-        "preco_alvo_mais_10": 8.44
+        "preco_entrada_menos_05": 8.04,
+        "preco_alvo_mais_075": 8.1
     },
     {
         "symbol": "TEND3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 54,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.12,
         "preco_atual": 30.25,
-        "preco_entrada_menos_5": 28.74,
-        "preco_alvo_mais_10": 31.61
+        "preco_entrada_menos_05": 30.1,
+        "preco_alvo_mais_075": 30.32
     },
     {
         "symbol": "TFCO4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 21,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.21,
         "preco_atual": 14.61,
-        "preco_entrada_menos_5": 13.88,
-        "preco_alvo_mais_10": 15.27
+        "preco_entrada_menos_05": 14.54,
+        "preco_alvo_mais_075": 14.65
     },
     {
         "symbol": "TGMA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.46,
         "preco_atual": 29.91,
-        "preco_entrada_menos_5": 28.41,
-        "preco_alvo_mais_10": 31.26
+        "preco_entrada_menos_05": 29.76,
+        "preco_alvo_mais_075": 29.98
     },
     {
         "symbol": "TIMS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.52,
         "preco_atual": 22.17,
-        "preco_entrada_menos_5": 21.06,
-        "preco_alvo_mais_10": 23.17
+        "preco_entrada_menos_05": 22.06,
+        "preco_alvo_mais_075": 22.22
     },
     {
         "symbol": "TOKY3.SA",
-        "padrao_atingido_vezes": 1,
+        "padrao_atingido_vezes": 115,
         "total_horas_analisadas": 1689,
-        "porcentagem_acerto": 0.06,
+        "porcentagem_acerto": 6.81,
         "preco_atual": 0.49,
-        "preco_entrada_menos_5": 0.47,
-        "preco_alvo_mais_10": 0.51
+        "preco_entrada_menos_05": 0.49,
+        "preco_alvo_mais_075": 0.49
     },
     {
         "symbol": "TOTS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 18,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.04,
         "preco_atual": 33.26,
-        "preco_entrada_menos_5": 31.6,
-        "preco_alvo_mais_10": 34.76
+        "preco_entrada_menos_05": 33.09,
+        "preco_alvo_mais_075": 33.34
     },
     {
         "symbol": "TPIS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 45,
         "total_horas_analisadas": 1498,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.0,
         "preco_atual": 9.32,
-        "preco_entrada_menos_5": 8.85,
-        "preco_alvo_mais_10": 9.74
+        "preco_entrada_menos_05": 9.27,
+        "preco_alvo_mais_075": 9.34
     },
     {
         "symbol": "TRAD3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 51,
         "total_horas_analisadas": 1474,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.46,
         "preco_atual": 1.19,
-        "preco_entrada_menos_5": 1.13,
-        "preco_alvo_mais_10": 1.24
+        "preco_entrada_menos_05": 1.18,
+        "preco_alvo_mais_075": 1.19
     },
     {
         "symbol": "TRIS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 21,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.21,
         "preco_atual": 4.08,
-        "preco_entrada_menos_5": 3.88,
-        "preco_alvo_mais_10": 4.26
+        "preco_entrada_menos_05": 4.06,
+        "preco_alvo_mais_075": 4.09
     },
     {
         "symbol": "TTEN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 24,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.39,
         "preco_atual": 14.14,
-        "preco_entrada_menos_5": 13.43,
-        "preco_alvo_mais_10": 14.78
+        "preco_entrada_menos_05": 14.07,
+        "preco_alvo_mais_075": 14.17
     },
     {
         "symbol": "TUPY3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 32,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.85,
         "preco_atual": 12.58,
-        "preco_entrada_menos_5": 11.95,
-        "preco_alvo_mais_10": 13.15
+        "preco_entrada_menos_05": 12.52,
+        "preco_alvo_mais_075": 12.61
     },
     {
         "symbol": "UCAS3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 73,
         "total_horas_analisadas": 1722,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.24,
         "preco_atual": 1.31,
-        "preco_entrada_menos_5": 1.24,
-        "preco_alvo_mais_10": 1.37
+        "preco_entrada_menos_05": 1.3,
+        "preco_alvo_mais_075": 1.31
     },
     {
         "symbol": "UGPA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 23,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 24.96,
-        "preco_entrada_menos_5": 23.71,
-        "preco_alvo_mais_10": 26.08
+        "preco_entrada_menos_05": 24.84,
+        "preco_alvo_mais_075": 25.02
     },
     {
         "symbol": "UNIP3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 16,
         "total_horas_analisadas": 1617,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.99,
         "preco_atual": 57.21,
-        "preco_entrada_menos_5": 54.35,
-        "preco_alvo_mais_10": 59.78
+        "preco_entrada_menos_05": 56.92,
+        "preco_alvo_mais_075": 57.35
     },
     {
         "symbol": "USIM3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 36,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.08,
         "preco_atual": 9.94,
-        "preco_entrada_menos_5": 9.44,
-        "preco_alvo_mais_10": 10.39
+        "preco_entrada_menos_05": 9.89,
+        "preco_alvo_mais_075": 9.96
     },
     {
         "symbol": "VALE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 4,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.23,
         "preco_atual": 78.55,
-        "preco_entrada_menos_5": 74.62,
-        "preco_alvo_mais_10": 82.08
+        "preco_entrada_menos_05": 78.16,
+        "preco_alvo_mais_075": 78.74
     },
     {
         "symbol": "VAMO3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 83,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 4.79,
         "preco_atual": 2.97,
-        "preco_entrada_menos_5": 2.82,
-        "preco_alvo_mais_10": 3.1
+        "preco_entrada_menos_05": 2.96,
+        "preco_alvo_mais_075": 2.98
     },
     {
         "symbol": "VBBR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 18,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.04,
         "preco_atual": 28.91,
-        "preco_entrada_menos_5": 27.46,
-        "preco_alvo_mais_10": 30.21
+        "preco_entrada_menos_05": 28.77,
+        "preco_alvo_mais_075": 28.98
     },
     {
         "symbol": "VITT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 38,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.19,
         "preco_atual": 3.37,
-        "preco_entrada_menos_5": 3.2,
-        "preco_alvo_mais_10": 3.52
+        "preco_entrada_menos_05": 3.35,
+        "preco_alvo_mais_075": 3.38
     },
     {
         "symbol": "VIVA3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 36,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.08,
         "preco_atual": 20.44,
-        "preco_entrada_menos_5": 19.42,
-        "preco_alvo_mais_10": 21.36
+        "preco_entrada_menos_05": 20.34,
+        "preco_alvo_mais_075": 20.49
     },
     {
         "symbol": "VIVR3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 63,
         "total_horas_analisadas": 1593,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.95,
         "preco_atual": 0.32,
-        "preco_entrada_menos_5": 0.3,
-        "preco_alvo_mais_10": 0.33
+        "preco_entrada_menos_05": 0.32,
+        "preco_alvo_mais_075": 0.32
     },
     {
         "symbol": "VIVT3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 11,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.64,
         "preco_atual": 33.02,
-        "preco_entrada_menos_5": 31.37,
-        "preco_alvo_mais_10": 34.51
+        "preco_entrada_menos_05": 32.85,
+        "preco_alvo_mais_075": 33.1
     },
     {
         "symbol": "VLID3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 22,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.27,
         "preco_atual": 17.45,
-        "preco_entrada_menos_5": 16.58,
-        "preco_alvo_mais_10": 18.24
+        "preco_entrada_menos_05": 17.36,
+        "preco_alvo_mais_075": 17.49
     },
     {
         "symbol": "VSTE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 8,
         "total_horas_analisadas": 1063,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.75,
         "preco_atual": 4.3,
-        "preco_entrada_menos_5": 4.09,
-        "preco_alvo_mais_10": 4.49
+        "preco_entrada_menos_05": 4.28,
+        "preco_alvo_mais_075": 4.31
     },
     {
         "symbol": "VTRU3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 52,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.0,
         "preco_atual": 12.42,
-        "preco_entrada_menos_5": 11.8,
-        "preco_alvo_mais_10": 12.98
+        "preco_entrada_menos_05": 12.36,
+        "preco_alvo_mais_075": 12.45
     },
     {
         "symbol": "VULC3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 14,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.81,
         "preco_atual": 14.34,
-        "preco_entrada_menos_5": 13.62,
-        "preco_alvo_mais_10": 14.99
+        "preco_entrada_menos_05": 14.27,
+        "preco_alvo_mais_075": 14.38
     },
     {
         "symbol": "VVEO3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 238,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 13.74,
         "preco_atual": 1.3,
-        "preco_entrada_menos_5": 1.23,
-        "preco_alvo_mais_10": 1.36
+        "preco_entrada_menos_05": 1.29,
+        "preco_alvo_mais_075": 1.3
     },
     {
         "symbol": "WDCN3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 18,
         "total_horas_analisadas": 1132,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.59,
         "preco_atual": 2.47,
-        "preco_entrada_menos_5": 2.35,
-        "preco_alvo_mais_10": 2.58
+        "preco_entrada_menos_05": 2.46,
+        "preco_alvo_mais_075": 2.48
     },
     {
         "symbol": "WEGE3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 17,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.98,
         "preco_atual": 42.58,
-        "preco_entrada_menos_5": 40.45,
-        "preco_alvo_mais_10": 44.5
+        "preco_entrada_menos_05": 42.37,
+        "preco_alvo_mais_075": 42.68
     },
     {
         "symbol": "WEST3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 32,
         "total_horas_analisadas": 1049,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 3.05,
         "preco_atual": 8.25,
-        "preco_entrada_menos_5": 7.84,
-        "preco_alvo_mais_10": 8.62
+        "preco_entrada_menos_05": 8.21,
+        "preco_alvo_mais_075": 8.27
     },
     {
         "symbol": "WHRL3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 9,
         "total_horas_analisadas": 1083,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.83,
         "preco_atual": 3.86,
-        "preco_entrada_menos_5": 3.67,
-        "preco_alvo_mais_10": 4.03
+        "preco_entrada_menos_05": 3.84,
+        "preco_alvo_mais_075": 3.87
     },
     {
         "symbol": "WHRL4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 20,
         "total_horas_analisadas": 1503,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.33,
         "preco_atual": 3.98,
-        "preco_entrada_menos_5": 3.78,
-        "preco_alvo_mais_10": 4.16
+        "preco_entrada_menos_05": 3.96,
+        "preco_alvo_mais_075": 3.99
     },
     {
         "symbol": "WIZC3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 16,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 0.92,
         "preco_atual": 7.59,
-        "preco_entrada_menos_5": 7.21,
-        "preco_alvo_mais_10": 7.93
+        "preco_entrada_menos_05": 7.55,
+        "preco_alvo_mais_075": 7.61
     },
     {
         "symbol": "WLMM3.SA",
@@ -2799,25 +2799,25 @@
         "total_horas_analisadas": 41,
         "porcentagem_acerto": 0.0,
         "preco_atual": 20.69,
-        "preco_entrada_menos_5": 19.66,
-        "preco_alvo_mais_10": 21.62
+        "preco_entrada_menos_05": 20.59,
+        "preco_alvo_mais_075": 20.74
     },
     {
         "symbol": "WLMM4.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 10,
         "total_horas_analisadas": 572,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 1.75,
         "preco_atual": 19.0,
-        "preco_entrada_menos_5": 18.05,
-        "preco_alvo_mais_10": 19.86
+        "preco_entrada_menos_05": 18.91,
+        "preco_alvo_mais_075": 19.05
     },
     {
         "symbol": "YDUQ3.SA",
-        "padrao_atingido_vezes": 0,
+        "padrao_atingido_vezes": 46,
         "total_horas_analisadas": 1732,
-        "porcentagem_acerto": 0.0,
+        "porcentagem_acerto": 2.66,
         "preco_atual": 8.93,
-        "preco_entrada_menos_5": 8.48,
-        "preco_alvo_mais_10": 9.33
+        "preco_entrada_menos_05": 8.89,
+        "preco_alvo_mais_075": 8.95
     }
 ]
