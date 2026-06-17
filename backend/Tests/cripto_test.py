@@ -1,14 +1,14 @@
 import requests
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
-COINGECKO_BASE = "https://api.coingecko.com/api/v3"
+COINGECKO_BASE = "https://coingecko.com"
 HEADERS = {
     "Accept": "application/json",
     "User-Agent": "Mozilla/5.0 (compatible; monitoramento-estatistico/1.0)"
 }
 REQUEST_TIMEOUT = 15
-SLEEP_BETWEEN_REQUESTS = 0.4
+SLEEP_BETWEEN_REQUESTS = 1.0  # Aumentado levemente para evitar bloqueios por IP
 
 
 def safe_get(url, params=None, max_retries=5):
@@ -34,7 +34,6 @@ def safe_get(url, params=None, max_retries=5):
 
 
 def buscar_pares_bybit():
-    # Buscar todas as exchanges Bybit (spot e futuros) no CoinGecko
     url_exchanges = f"{COINGECKO_BASE}/exchanges"
     dados_exchanges = safe_get(url_exchanges, params={"per_page": 250, "page": 1})
     if not isinstance(dados_exchanges, list):
@@ -46,7 +45,7 @@ def buscar_pares_bybit():
     for ex_id in bybit_exchanges:
         url = f"{COINGECKO_BASE}/exchanges/{ex_id}/tickers"
         page = 1
-        max_pages = 100
+        max_pages = 5  # Reduzido para evitar atingir o limite da API rapidamente
 
         while page <= max_pages:
             dados = safe_get(url, params={"page": page})
@@ -68,11 +67,6 @@ def buscar_pares_bybit():
                 par = f"{base}/USDT"
                 if par not in pares:
                     pares.append(par)
-
-                    if len(pares) % 5 == 0:
-                        print(f"[checkpoint] coletados {len(pares)} pares; aguardando 5 segundos antes da próxima busca...")
-                        time.sleep(5)
-
             page += 1
 
     return pares
@@ -92,29 +86,60 @@ def encontrar_coin_id_por_symbol(symbol, coins_list):
     return candidatos[0].get("id")
 
 
-def buscar_historico_ohlc(coin_id, dias=365, vs_currency="usd"):
-    url = f"{COINGECKO_BASE}/coins/{coin_id}/ohlc"
-    params = {
-        "vs_currency": vs_currency,
-        "days": dias,
-    }
-    dados = safe_get(url, params=params)
-    if not isinstance(dados, list):
-        return []
+def buscar_historico_ohlc_por_ano_em_blocos(coin_id, vs_currency="usd"):
+    """
+    Divide 1 ano em 4 blocos de 90 dias usando o endpoint de range
+    para garantir dados individuais por dia.
+    """
+    # Usa o endpoint /range dedicado para intervalos de tempo customizados
+    url = f"{COINGECKO_BASE}/coins/{coin_id}/ohlc/range"
+    historico_completo = []
+    datas_processadas = set()
 
-    historico = []
-    for registro in dados:
-        if len(registro) != 5:
-            continue
-        timestamp, open_price, high_price, low_price, close_price = registro
-        historico.append({
-            "data": datetime.utcfromtimestamp(timestamp / 1000).strftime("%Y-%m-%d"),
-            "entrada": open_price,
-            "minimo": low_price,
-            "maximo": high_price,
-            "fechamento": close_price,
-        })
-    return historico
+    fim_atual = datetime.utcnow()
+
+    # Executa 4 ciclos de 90 dias (360 dias no total)
+    for ciclo in range(4):
+        inicio_atual = fim_atual - timedelta(days=90)
+        
+        # Converte para timestamp Unix inteiro requerido pela API do CoinGecko
+        from_timestamp = int(inicio_atual.timestamp())
+        to_timestamp = int(fim_atual.timestamp())
+
+        params = {
+            "vs_currency": vs_currency,
+            "from": from_timestamp,
+            "to": to_timestamp
+        }
+
+        print(f"    -> Buscando bloco {ciclo + 1}: {inicio_atual.strftime('%Y-%m-%d')} ate {fim_atual.strftime('%Y-%m-%d')}")
+        dados = safe_get(url, params=params)
+
+        if isinstance(dados, list):
+            for registro in dados:
+                if len(registro) != 5:
+                    continue
+                timestamp, open_price, high_price, low_price, close_price = registro
+                data_formatada = datetime.utcfromtimestamp(timestamp / 1000).strftime("%Y-%m-%d")
+                
+                # Evita duplicar registros nas bordas dos blocos de 90 dias
+                if data_formatada not in datas_processadas:
+                    datas_processadas.add(data_formatada)
+                    historico_completo.append({
+                        "data": data_formatada,
+                        "entrada": open_price,
+                        "minimo": low_price,
+                        "maximo": high_price,
+                        "fechamento": close_price,
+                    })
+        
+        # O fim do próximo bloco (passado) será o início deste bloco atual
+        fim_atual = inicio_atual
+        time.sleep(1.5)  # Pausa de segurança extra entre os blocos do mesmo ativo
+
+    # Ordena o histórico do dia mais antigo para o mais recente
+    historico_completo.sort(key=lambda x: x["data"])
+    return historico_completo
 
 
 def obter_historico_diario_bybit(limit=1):
@@ -131,12 +156,13 @@ def obter_historico_diario_bybit(limit=1):
         if not coin_id:
             resultados.append({
                 "par": par,
-                "erro": "ID CoinGecko não encontrado para o símbolo",
+                "erro": "ID CoinGecko nao encontrado para o simbolo",
                 "historico": [],
             })
             continue
 
-        historico = buscar_historico_ohlc(coin_id, dias=365)
+        print(f"[Processando] {par} (ID: {coin_id})")
+        historico = buscar_historico_ohlc_por_ano_em_blocos(coin_id)
         resultados.append({
             "par": par,
             "coin_id": coin_id,
@@ -148,13 +174,23 @@ def obter_historico_diario_bybit(limit=1):
 
 if __name__ == "__main__":
     resultados = obter_historico_diario_bybit(limit=1)
+    print("\n--- RESULTADO FINAL ---")
     for item in resultados:
         print(f"PAR: {item['par']}")
         if item.get("erro"):
             print(f"  Erro: {item['erro']}")
             continue
         print(f"  CoinGecko ID: {item.get('coin_id')}")
-        print(f"  Registros: {len(item['historico'])}")
-        for dia in item["historico"]:
-            print(f"    {dia['data']} -> entrada={dia['entrada']}, min={dia['minimo']}, max={dia['maximo']}, fechamento={dia['fechamento']}")
+        print(f"  Registros Totais: {len(item['historico'])}")
+        
+        # Exibe apenas os primeiros 5 e os ultimos 5 para nao poluir o terminal
+        if len(item['historico']) > 10:
+            for dia in item["historico"][:5]:
+                print(f"    {dia['data']} -> entrada={dia['entrada']}, min={dia['minimo']}, max={dia['maximo']}, fechamento={dia['fechamento']}")
+            print("    ...")
+            for dia in item["historico"][-5:]:
+                print(f"    {dia['data']} -> entrada={dia['entrada']}, min={dia['minimo']}, max={dia['maximo']}, fechamento={dia['fechamento']}")
+        else:
+            for dia in item["historico"]:
+                print(f"    {dia['data']} -> entrada={dia['entrada']}, min={dia['minimo']}, max={dia['maximo']}, fechamento={dia['fechamento']}")
         print()
